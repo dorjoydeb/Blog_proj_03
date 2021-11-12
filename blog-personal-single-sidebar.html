@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--=====  Meta Data  ======-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Single Post with Sidebar - Ambio</title>
+
+  <!--=====  Application Icons  ======-->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="assets/img/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/img/icons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="assets/img/icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="assets/img/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="assets/img/icons/manifest.json">
+  <link rel="mask-icon" href="assets/img/icons/safari-pinned-tab.svg">
+  <link rel="shortcut icon" href="assets/img/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="assets/img/icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="assets/img/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!--=====  Dependency Styles  ======-->
+  <link rel="stylesheet" href="dependencies/loaders.css/loaders.min.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/font-awesome/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/Swiper/css/swiper.min.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/animate.css/animate.min.css" type="text/css">
+
+  <!--=====  App Styles  ======-->
+  <link rel="stylesheet" href="assets/css/app.css" type="text/css">
+
+  <!--=====  Google Web Fonts  ======-->
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  <style>
+    /* Preloader */
+
+    #preloader {
+      /*display: none;*/
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #0f161e;
+      z-index: 9999;
+    }
+
+    #loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  </style>
+
+</head>
+
+<body id="blog-personal-sidebar" class="blog-personal-sidebar">
+  <div id="preloader">
+    <div id="loader">
+      <div class="loader-inner ball-scale-multiple">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- /#loader -->
+  </div>
+  <!-- /#preloader -->
+  <div id="back-to-top-position"></div>
+
+
+  <!--==============================-->
+  <!--=        Site header         =-->
+  <!--==============================-->
+  <header id="dt-site-header" class="sliding-menu-enabled">
+    <div id="dt-logo-and-social">
+      <div id="dt-menu-trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- /#dt-menu-trigger -->
+
+      <div id="dt-logo">
+        <a href="index.html">
+          <img src="assets/img/logo.png" alt="Ambio">
+        </a>
+      </div>
+      <!-- #dt-logo -->
+
+      <ul class="dt-social-icons vertical text-center">
+        <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#" title="Soundcloud"><i class="fa fa-soundcloud"></i></a></li>
+        <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+      <!-- /.dt-social-icons -->
+    </div>
+    <!-- /#dt-logo-and-social -->
+
+    <div id="dt-site-menu">
+
+      <div class="menu-container">
+        <ul class="nav-menu">
+          <li class="current-menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item-has-children">
+            <a href="#">Blog</a>
+            <ul class="sub-menu">
+              <li><a href="blog-masonry.html">Masonry Blog</a></li>
+              <li><a href="blog-sidebar.html">Sidebar Blog</a></li>
+              <li><a href="blog-full-width.html">Fullwidth Blog</a></li>
+              <li><a href="blog-single-sidebar.html">Single post sidebar</a></li>
+              <li><a href="blog-single-full.html">Single post fullwidth</a></li>
+            </ul>
+            <!-- /.sub-menu -->
+          </li>
+          <li class="menu-item-has-children">
+            <a href="#">Works</a>
+            <ul class="sub-menu">
+              <li><a href="work-photo-gallery.html">Gallery</a></li>
+              <li><a href="work-video-gallery.html">Video</a></li>
+              <li><a href="work-description.html">Description</a></li>
+            </ul>
+            <!-- /.sub-menu -->
+          </li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+          <li class="menu-item-has-children">
+            <a href="#">Pages</a>
+            <ul class="sub-menu">
+              <li><a href="error-page.html">Error Page</a></li>
+              <li><a href="offline.html">Offline Page</a></li>
+              <li><a href="coming-soon.html">Coming Soon</a></li>
+            </ul>
+            <!-- /.sub-menu -->
+          </li>
+        </ul>
+        <!-- /.nav-menus -->
+      </div>
+      <!-- /.menu-container -->
+
+      <div id="dt-search-and-links">
+        <form class="dt-search-form" action="index.html" method="get">
+          <input type="text" name="s" id="search" value="" />
+          <button type="submit" id="search-submit" title="Submit"><i class="fa fa-search"></i></button>
+        </form>
+        <!-- /.dt-search-form -->
+
+        <ul class="dt-quick-links">
+          <li><a href="#login">Login</a></li>
+          <li><a href="#register">Register</a></li>
+        </ul>
+        <!-- /.dt-quick-links -->
+      </div>
+      <!-- /#dt-search-and-links -->
+
+    </div>
+    <!-- /#dt-site-menu -->
+  </header>
+  <!-- /#dt-site-header -->
+
+  <!--==============================-->
+  <!--=        Page header         =-->
+  <!--==============================-->
+  <div class="container sr-animated">
+    <ol class="dt-breadcrumbs text-right">
+      <li><a href="#">Home</a></li>
+      <li class="active">Blog</li>
+    </ol>
+  </div>
+  <!-- /.container -->
+
+  <section id="dt-page-header-section" class="dt-page-header dt-alt-color" data-bg-image="static/page-header/11.jpg">
+    <div class="container">
+      <h2 class="dt-title sr-animated">Blog</h2>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /#dt-page-header-section -->
+
+  <!--===============================-->
+  <!--=        Blog content         =-->
+  <!--===============================-->
+  <main id="dt-main-content" class="dt-main-content section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <!--============================-->
+          <!--=        Blog Post         =-->
+          <!--============================-->
+          <article class="dt-post dt-single-post personal">
+            <header class="dt-entry-header sr-animated">
+              <h3 class="dt-title">tumblr literally green juice</h3>
+
+              <div class="dt-entry-meta">
+                <ul class="dt-meta">
+                  <li>By <a href="#">John Doe</a></li>
+                  <li>Dec, 19, 2015</li>
+                  <li>Comments: <a href="#comments">0</a></li>
+                </ul>
+                <!-- /.dt-meta -->
+              </div>
+              <!-- /.dt-post-meta -->
+            </header>
+            <!-- /.dt-entry-header -->
+
+            <div class="dt-entry-content sr-animated">
+              <p>
+                Readymade freegan mlkshk semiotics master cleanse tote bag, knausgaard ugh normcore brunch williamsburg pop-up.Trust fund quinoa biodiesel, PBR&amp;B butcher vegan readymade crucifix twee jean shorts bitters letterpress waistcoat banjo retro. Taxidermy
+                franzen farm-to-table readymade. Gluten-free lumbersexual normcore, plaid disrupt gochujang butcher iPhone celiac.
+              </p>
+
+              <div class="dt-swiper-image-carousel-widget" data-carousel="swiper">
+                <div class="swiper-container dt-image-carousel" data-swiper="container" data-loop="true">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="static/single-post/carousel-personal/01.jpg" alt="Image 01">
+                    </div>
+                    <!-- /.swiper-slide -->
+
+                    <div class="swiper-slide">
+                      <img src="static/single-post/carousel-personal/01.jpg" alt="Image 02">
+                    </div>
+                    <!-- /.swiper-slide -->
+                  </div>
+                  <!-- /.swiper-wrapper -->
+
+                  <div data-swiper="pagination"></div>
+
+                  <div data-swiper="prev">
+                    <i class="fa fa-angle-left"></i>
+                  </div>
+
+                  <div data-swiper="next">
+                    <i class="fa fa-angle-right"></i>
+                  </div>
+                </div>
+                <!-- /.dt-image-carousel -->
+              </div>
+              <!-- /.dt-swiper-image-carousel-widget -->
+
+              <p>
+                Slow-carb four loko pickled, quinoa raw denim you probably haven't heard of them shoreditch retro actually narwhal cred. Locavore pug austin jean shorts cray, +1 poutine synth intelligentsia echo park. Poutine gastropub kogi, tote bag twee synth butcher
+                yuccie pork belly tacos biodiesel chambray bushwick leggings slow-carb. Flannel tousled small batch meditation. Venmo kinfolk kombucha distillery. Kogi craft beer migas, listicle food truck asymmetrical cold-pressed slow-carb
+                8-bit trust fund semiotics wolf hammock crucifix. Quinoa occupy selfies meggings, tacos crucifix truffaut.
+              </p>
+              <blockquote>
+                Chambray raw denim readymade, knausgaard artisan venmo bicycle rights selfies food truck franzen tousled gluten-free tumblr. Affogato lumbersexual lo-fi, ennui street art flexitarian mumblecore freegan occupy narwhal.
+              </blockquote>
+              <p>
+                Wayfarers freegan twee sartorial. Keytar pinterest 90's, biodiesel authentic whatever four dollar toast affogato jean shorts blog yuccie semiotics. Plaid actually direct trade gastropub craft beer fap. Selfies retro cred letterpress, 3 wolf moon art party
+                hoodie flannel affogato williamsburg freegan. Offal meditation neutra, post-ironic gastropub everyday carry poutine pug whatever venmo celiac, letterpress austin echo park cornhole meggings portland kinfolk art party pickled.
+              </p>
+
+              <img src="static/single-post/03.jpg" alt="Personal Page" class="pull-left">
+              <p>
+                Hammock stumptown neutra pickled, meditation pug austin echo park plaid banh mi. Mumblecore +1 tattooed mixtape, hella green juice godard pug poutine pork belly disrupt viral. Cray meggings etsy wayfarers PBR&amp;B pork belly. Polaroid messenger bag farm-to-table,
+                mlkshk photo booth bushwick mumblecore whatever. PBR&amp;B selfies whatever, cliche gentrify farm-to-table ethical. Ramps synth street art poutine single-origin coffee franzen, hashtag irony drinking vinegar thundercats.
+                Four dollar toast viral beard, raw denim neutra next level artisan humblebrag gentrify.
+              </p>
+              <p>
+                Heirloom photo booth shoreditch +1. Chillwave raw denim jean shorts mumblecore, distillery taxidermy quinoa.
+              </p>
+              <p>
+                Williamsburg sartorial yr, banh mi cold-pressed viral hashtag kitsch gastropub pitchfork street art mlkshk. Artisan keytar tilde fingerstache deep v meh pitchfork trust fund, beard skateboard seitan intelligentsia mumblecore kitsch. Cold-pressed squid
+                hella, pour-over pug aesthetic actually shabby chic lo-fi irony leggings scenester bicycle rights.
+              </p>
+            </div>
+            <!-- /.dt-entry-content -->
+
+            <div class="clearfix"></div>
+            <hr class="dt-ext-mb">
+
+            <footer class="dt-entry-footer sr-animated">
+              <ul class="dt-share pull-left">
+                <li class="share-text">Share</li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-share"></i></a></li>
+              </ul>
+              <!-- /.dt-share -->
+
+              <div class="dt-entry-category">
+                Category: <a href="#">World</a>
+              </div>
+              <!-- /.dt-entry-category -->
+            </footer>
+            <!-- /.dt-entry-footer -->
+          </article>
+          <!-- /.dt-post -->
+
+          <!-- Comments Area -->
+          <section id="dt-comments-section" class="dt-comments-section">
+            <h3 class="dt-title dt-tb-line text-uppercase sr-animated">Comments</h3>
+
+            <div id="comments" class="comments-area">
+              <ol class="comment-list">
+                <li class="comment sr-animated">
+                  <article id="div-comment-1" class="dt-comment-body">
+                    <div class="dt-author-photo">
+                      <img alt="" src="static/single-post/comments/01.jpg" class="avatar">
+                    </div>
+                    <!-- /.dt-author-photo -->
+
+                    <div class="dt-comment-content">
+                      <div class="dt-comment-meta">
+                        <h4 class="dt-comment-author">
+                          <a href="#" rel="external nofollow" class="url">Thierry Lonford</a>
+                        </h4>
+                        <!-- .dt-comment-author -->
+
+                        <div class="dt-comment-info">
+                          <a class="dt-comment-date" href="#">
+                            <time datetime="2012-09-03T10:18:04+00:00">Dec. 20 2015 at 2 pm</time>
+                          </a>
+                        </div>
+                        <!-- /.dt-comment-info -->
+                      </div>
+                      <!-- .dt-comment-meta -->
+                      <div class="dt-content">
+                        Fixie health goth crucifix food truck. Four dollar toast food truck echo park mustache kale chips. Intelligentsia portland authentic locavore, literally tattooed cray street art poutine four dollar toast. Polaroid wolf poutine gentrify
+                      </div>
+
+                      <div class="dt-comment-footer">
+
+                        <ul class="dt-share pull-left">
+                          <li class="share-text">Share</li>
+                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                        <!-- /.dt-share -->
+
+                        <ul class="dt-comment-action pull-right">
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-reply"></i>
+                              <span>Replay</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-heart"></i>
+                              <span>(15)</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <!-- /.dt-comment-action -->
+
+                      </div>
+                      <!-- /.dt-comment-footer -->
+                      <div class="clearfix"></div>
+                    </div>
+                    <!-- .comment-content -->
+                  </article>
+                  <!-- /#div-comment-# -->
+
+                  <ol class="children">
+                    <li class="comment sr-animated">
+                      <article id="div-comment-2" class="dt-comment-body">
+                        <div class="dt-author-photo">
+                          <img alt="" src="static/single-post/comments/02.jpg" class="avatar">
+                        </div>
+                        <!-- /.dt-author-photo -->
+
+                        <div class="dt-comment-content">
+                          <div class="dt-comment-meta">
+                            <h4 class="dt-comment-author">
+                              <a href="#" rel="external nofollow" class="url">Vincent B. Baxley</a>
+                            </h4>
+                            <!-- .dt-comment-author -->
+
+                            <div class="dt-comment-info">
+                              <a class="dt-comment-date" href="#">
+                                <time datetime="2012-09-03T10:18:04+00:00">Dec. 20 2015 at 2:02 pm</time>
+                              </a>
+                            </div>
+                            <!-- /.dt-comment-info -->
+                          </div>
+                          <!-- .dt-comment-meta -->
+                          <div class="dt-content">
+                            To Thierry: <br /> Yes!!! Four dollar toast food truck echo park mustache kale chips. Intelligentsia portland authentic locavore, literally tattooed cray street art poutine four dollar toast.
+                          </div>
+
+                          <div class="dt-comment-footer">
+
+                            <ul class="dt-share pull-left">
+                              <li class="share-text">Share</li>
+                              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                            <!-- /.dt-share -->
+
+                            <ul class="dt-comment-action pull-right">
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-reply"></i>
+                                  <span>Replay</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-heart"></i>
+                                  <span>(15)</span>
+                                </a>
+                              </li>
+                            </ul>
+                            <!-- /.dt-comment-action -->
+
+                          </div>
+                          <!-- /.dt-comment-footer -->
+                          <div class="clearfix"></div>
+                        </div>
+                        <!-- .comment-content -->
+                      </article>
+                      <!-- /#div-comment-# -->
+                    </li>
+                    <!-- /.comment -->
+                    <li class="comment sr-animated bypostauthor">
+                      <article id="div-comment-2" class="dt-comment-body">
+                        <div class="dt-author-photo">
+                          <img alt="" src="static/single-post/comments/03.jpg" class="avatar">
+                        </div>
+                        <!-- /.dt-author-photo -->
+
+                        <div class="dt-comment-content">
+                          <div class="dt-comment-meta">
+                            <h4 class="dt-comment-author">
+                              <a href="#" rel="external nofollow" class="url">Maria Desmond</a>
+                            </h4>
+                            <!-- .dt-comment-author -->
+
+                            <div class="dt-comment-info">
+                              <a class="dt-comment-date" href="#">
+                                <time datetime="2012-09-03T10:18:04+00:00">Dec. 21 2015 at 2:02 pm</time>
+                              </a>
+                            </div>
+                            <!-- /.dt-comment-info -->
+                          </div>
+                          <!-- .dt-comment-meta -->
+                          <div class="dt-content">
+                            To Vincent: <br /> Literally tattooed cray street art poutine four dollar toast
+                          </div>
+
+                          <div class="dt-comment-footer">
+
+                            <ul class="dt-share pull-left">
+                              <li class="share-text">Share</li>
+                              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                            <!-- /.dt-share -->
+
+                            <ul class="dt-comment-action pull-right">
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-reply"></i>
+                                  <span>Replay</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-heart"></i>
+                                  <span>(15)</span>
+                                </a>
+                              </li>
+                            </ul>
+                            <!-- /.dt-comment-action -->
+
+                          </div>
+                          <!-- /.dt-comment-footer -->
+                          <div class="clearfix"></div>
+                        </div>
+                        <!-- .comment-content -->
+                      </article>
+                      <!-- /#div-comment-# -->
+                    </li>
+                    <!-- /.comment -->
+                  </ol>
+                  <!-- /.children -->
+                </li>
+                <!-- /.comment -->
+
+                <li class="comment sr-animated">
+                  <article id="div-comment-1" class="dt-comment-body">
+                    <div class="dt-author-photo">
+                      <img alt="" src="static/single-post/comments/04.jpg" class="avatar">
+                    </div>
+                    <!-- /.dt-author-photo -->
+
+                    <div class="dt-comment-content">
+                      <div class="dt-comment-meta">
+                        <h4 class="dt-comment-author">
+                          <a href="#" rel="external nofollow" class="url">Christopher Y.</a>
+                        </h4>
+                        <!-- .dt-comment-author -->
+
+                        <div class="dt-comment-info">
+                          <a class="dt-comment-date" href="#">
+                            <time datetime="2012-09-03T10:18:04+00:00">Dec. 21 2015 at 2.10 pm</time>
+                          </a>
+                        </div>
+                        <!-- /.dt-comment-info -->
+                      </div>
+                      <!-- .dt-comment-meta -->
+                      <div class="dt-content">
+                        Blue bottle PBR&B selvage ramps, master cleanse sustainable cred photo booth. Flannel put a bird on it slow-carb shoreditch, cronut deep v swag tofu squid. Umami tattooed seitan paleo pitchfork blog
+                      </div>
+
+                      <div class="dt-comment-footer">
+
+                        <ul class="dt-share pull-left">
+                          <li class="share-text">Share</li>
+                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                        <!-- /.dt-share -->
+
+                        <ul class="dt-comment-action pull-right">
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-reply"></i>
+                              <span>Replay</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-heart"></i>
+                              <span>(15)</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <!-- /.dt-comment-action -->
+
+                      </div>
+                      <!-- /.dt-comment-footer -->
+                      <div class="clearfix"></div>
+                    </div>
+                    <!-- .comment-content -->
+                  </article>
+                  <!-- /#div-comment-# -->
+
+                  <ol class="children">
+                    <li class="comment sr-animated">
+                      <article id="div-comment-2" class="dt-comment-body">
+                        <div class="dt-author-photo">
+                          <img alt="" src="static/single-post/comments/05.jpg" class="avatar">
+                        </div>
+                        <!-- /.dt-author-photo -->
+
+                        <div class="dt-comment-content">
+                          <div class="dt-comment-meta">
+                            <h4 class="dt-comment-author">
+                              <a href="#" rel="external nofollow" class="url">Laurent Pinner</a>
+                            </h4>
+                            <!-- .dt-comment-author -->
+
+                            <div class="dt-comment-info">
+                              <a class="dt-comment-date" href="#">
+                                <time datetime="2012-09-03T10:18:04+00:00">Dec. 21 2015 at 2:15 pm</time>
+                              </a>
+                            </div>
+                            <!-- /.dt-comment-info -->
+                          </div>
+                          <!-- .dt-comment-meta -->
+                          <div class="dt-content">
+                            To Christopher: <br> Yes!!! Four dollar toast food truck echo park mustache kale chips. Intelligentsia portland authentic locavore, literally tattooed cray street art poutine four dollar toast.
+                          </div>
+
+                          <div class="dt-comment-footer">
+
+                            <ul class="dt-share pull-left">
+                              <li class="share-text">Share</li>
+                              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                            <!-- /.dt-share -->
+
+                            <ul class="dt-comment-action pull-right">
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-reply"></i>
+                                  <span>Replay</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-heart"></i>
+                                  <span>(15)</span>
+                                </a>
+                              </li>
+                            </ul>
+                            <!-- /.dt-comment-action -->
+
+                          </div>
+                          <!-- /.dt-comment-footer -->
+                          <div class="clearfix"></div>
+                        </div>
+                        <!-- .comment-content -->
+                      </article>
+                      <!-- /#div-comment-# -->
+                    </li>
+                    <!-- /.comment -->
+                  </ol>
+                  <!-- /.children -->
+                </li>
+                <!-- /.comment -->
+              </ol>
+              <!-- /.comment-list -->
+            </div>
+            <!-- /#comments -->
+          </section>
+          <!-- /#dt-comments-section -->
+
+          <!-- Comment Form -->
+          <div id="respond" class="comment-respond">
+            <h3 id="reply-title" class="dt-title dt-tb-line text-uppercase sr-animated">Leave your comment</h3>
+
+            <form action="#" method="post" id="commentform" class="comment-form" novalidate="">
+              <p class="comment-form-comment sr-animated">
+                <label for="comment">Your Comment</label>
+                <textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required="required"></textarea>
+              </p>
+              <p class="comment-form-author sr-animated">
+                <label for="author">Name</label>
+                <input id="author" name="author" type="text" value="" size="30" aria-required="true" required="required">
+              </p>
+              <p class="comment-form-email sr-animated">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" value="" size="30" aria-describedby="email-notes" aria-required="true" required="required">
+              </p>
+              <p class="form-submit sr-animated">
+                <input name="submit" type="submit" id="comment-submit" class="submit" value="Post Comment">
+              </p>
+            </form>
+          </div>
+          <!-- /#respond -->
+
+        </div>
+        <!-- /.col-md-8 -->
+
+        <div class="col-md-4">
+          <!--==========================-->
+          <!--=        Sidebar         =-->
+          <!--==========================-->
+          <div id="home-sidebar-area">
+            <section id="widget_categories" class="widget sr-animated widget_dt_categories">
+              <h4 class="widget-title text-uppercase">Categories</h4>
+
+              <div class="dt-widget-container">
+                <ul class="dt-categories-list">
+                  <li><a class="dt-btn alt" href="#">All</a></li>
+                  <li><a class="dt-btn alt active" href="#">New In</a></li>
+                  <li><a class="dt-btn alt" href="#">World</a></li>
+                  <li><a class="dt-btn alt" href="#">Digital</a></li>
+                  <li><a class="dt-btn alt" href="#">Music &amp; Movies</a></li>
+                  <li><a class="dt-btn alt" href="#">Art &amp; Style</a></li>
+                  <li><a class="dt-btn alt" href="#">Sports</a></li>
+                  <li><a class="dt-btn alt" href="#">City guides</a></li>
+                  <li><a class="dt-btn alt" href="#">Travel</a></li>
+                  <li><a class="dt-btn alt" href="#">Editorial</a></li>
+                </ul>
+                <!-- /.dt-categories-list -->
+              </div>
+              <!-- /.dt-widget-container -->
+
+            </section>
+            <!-- /#widget_{ID} -->
+            <section id="widget_latest-photos" class="widget sr-animated widget_dt_latest-photos">
+              <h4 class="widget-title text-uppercase">Latest Photos:</h4>
+
+              <div class="dt-widget-container">
+                <div class="dt-latest-photos" data-area="isotope">
+                  <div class="photo-items" data-area="isotope-container">
+                    <div class="dt-gallery-item dt-grid-item">
+                      <a href="#"><img src="static/widgets/latest-photos/01.jpg" alt="01"></a>
+                    </div>
+                    <!-- ./dt-gallery-item dt-grid-item -->
+                    <div class="dt-gallery-item dt-grid-item">
+                      <a href="#"><img src="static/widgets/latest-photos/02.jpg" alt="02"></a>
+                    </div>
+                    <!-- ./dt-gallery-item dt-grid-item -->
+                    <div class="dt-gallery-item dt-grid-item">
+                      <a href="#"><img src="static/widgets/latest-photos/03.jpg" alt="03"></a>
+                    </div>
+                    <!-- ./dt-gallery-item dt-grid-item -->
+                    <div class="dt-gallery-item dt-grid-item">
+                      <a href="#"><img src="static/widgets/latest-photos/04.jpg" alt="04"></a>
+                    </div>
+                    <!-- ./dt-gallery-item dt-grid-item -->
+                  </div>
+                  <!-- /.photo-items -->
+                </div>
+                <!-- /.dt-latest-photos -->
+              </div>
+              <!-- /.dt-widget-container -->
+
+            </section>
+            <!-- /#widget_{ID} -->
+            <section id="widget_latest-comments" class="widget sr-animated widget_dt_latest-comments">
+              <h4 class="widget-title text-uppercase">Latest Comments</h4>
+
+              <div class="dt-widget-container">
+                <div class="dt-latest-comments">
+                  <div class="dt-item">
+                    <div class="dt-comment-info">
+                      <div class="dt-avatar">
+                        <img src="static/widgets/latest-comments/01.jpg" alt="Comment 01">
+                      </div>
+                      <!-- /.dt-avatar -->
+
+                      <div class="dt-item-meta">
+                        <h4 class="dt-title">Thierry Lonford</h4>
+                        <div class="dt-date">Dec, 20, 2015 at 2 pm</div>
+                        <div class="dt-on-post">In <a href="#">“Weekend in Dublin”</a></div>
+                      </div>
+                      <!-- /.dt-meta -->
+                    </div>
+                    <!-- /.dt-comment-info -->
+
+                    <div class="dt-content">
+                      Fixie health goth crucifix food truck. Four dollar toast food truck echo park mustache kale chips. Intelligentsia portland authentic
+                    </div>
+                    <!-- /.dt-content -->
+
+                    <div class="dt-item-action">
+                      <ul class="dt-share">
+                        <li class="share-text">Share</li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-share"></i></a></li>
+                      </ul>
+                      <!-- /.dt-share -->
+
+                      <div class="dt-comment-love">
+                        <a href="#add-top-love" class="dt-add-to-fav"><i class="fa fa-heart"></i></a> (15)
+                      </div>
+                      <!-- /.dt-comment-love -->
+                    </div>
+                    <!-- /.dt-item-action -->
+                  </div>
+                  <!-- /.dt-item -->
+
+                  <div class="dt-item">
+                    <div class="dt-comment-info">
+                      <div class="dt-avatar">
+                        <img src="static/widgets/latest-comments/02.jpg" alt="Comment 02">
+                      </div>
+                      <!-- /.dt-avatar -->
+
+                      <div class="dt-item-meta">
+                        <h4 class="dt-title">Michael J. chicharrone</h4>
+                        <div class="dt-date">Dec, 20, 2015 at 2 pm</div>
+                        <div class="dt-on-post">In <a href="#">“Men trend”</a></div>
+                      </div>
+                      <!-- /.dt-meta -->
+                    </div>
+                    <!-- /.dt-comment-info -->
+
+                    <div class="dt-content">
+                      Literally tattooed cray street art poutine four dollar toast. Polaroid wolf poutine gentrify
+                    </div>
+                    <!-- /.dt-content -->
+
+                    <div class="dt-item-action">
+                      <ul class="dt-share">
+                        <li class="share-text">Share</li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-share"></i></a></li>
+                      </ul>
+                      <!-- /.dt-share -->
+
+                      <div class="dt-comment-love">
+                        <a href="#add-top-love" class="dt-add-to-fav"><i class="fa fa-heart"></i></a> (8)
+                      </div>
+                      <!-- /.dt-comment-love -->
+                    </div>
+                    <!-- /.dt-item-action -->
+                  </div>
+                  <!-- /.dt-item -->
+
+                </div>
+                <!-- /.dt-latest-comments -->
+              </div>
+              <!-- /.dt-widget-container -->
+
+            </section>
+            <!-- /#widget_{ID} -->
+            <section id="widget_popular-tags" class="widget sr-animated widget_dt_popular_tags">
+              <h4 class="widget-title text-uppercase">Popular Tags</h4>
+
+              <div class="tagcloud">
+                <a href="#" class="text-uppercase">Beard</a>
+                <a href="#">Cliche</a>
+                <a href="#">Farm-To-Table</a>
+                <a href="#">Mixtape</a>
+                <a href="#">Tote</a>
+                <a href="#">Bag</a>
+                <a href="#">Ugh</a>
+                <a href="#" class="text-uppercase">Normcore</a>
+                <a href="#">Butcher</a>
+                <a href="#">Kogi</a>
+                <a href="#">Church-key</a>
+                <a href="#">Organic</a>
+                <a href="#">fingerstache</a>
+                <a href="#">Brunch bushwick</a>
+                <a href="#" class="text-uppercase">Chicharrones</a>
+                <a href="#">Taxidermy wayfarers</a>
+                <a href="#">Neutra Pork</a>
+                <a href="#">Belly</a>
+                <a href="#" class="text-uppercase">Kombucha</a>
+                <a href="#">Hammock</a>
+                <a href="#">Ugh</a>
+                <a href="#">Butcher</a>
+                <a href="#">Kogi</a>
+                <a href="#">Church-key</a>
+                <a href="#" class="text-uppercase">Organic</a>
+                <a href="#">fingerstache</a>
+                <a href="#">Brunch bushwick</a>
+                <a href="#">axidermy</a>
+                <a href="#">wayfarers</a>
+                <a href="#">Neutra Pork</a>
+                <a href="#">Belly</a>
+                <a href="#" class="text-uppercase">Kombucha</a>
+              </div>
+              <!-- /.tagcloud -->
+
+            </section>
+            <!-- /#widget_{ID} -->
+          </div>
+          <!-- /#home-sidebar-area -->
+
+        </div>
+        <!-- /.col-md-4 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </main>
+  <!-- /#dt-main-content -->
+
+  <!--===================================-->
+  <!--=        Special Carousel         =-->
+  <!--===================================-->
+  <section id="dt-special-carousel-section" class="section-padding">
+    <div class="dt-item-carousel dt-style-02 gray sr-animated" data-carousel="swiper">
+      <div class="swiper-container" data-swiper="container" data-items="3" data-loop="true" data-space="90" data-autoplay="3000" data-center="true" data-breakpoints='{"5000": {"slidesPerView": 3}, "1024": {"slidesPerView": 2}, "768": {"slidesPerView": 1}}'>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="dt-item">
+              <img src="static/carousel/style-02/15.jpg" alt="Image 15">
+
+              <div class="dt-caption text-center">
+                <h3 class="dt-title">
+                  Sun Edges perfomance
+                </h3>
+              </div>
+              <!-- /.dt-caption -->
+            </a>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <a href="#" class="dt-item">
+              <img src="static/carousel/style-02/14.jpg" alt="Image 14">
+
+              <div class="dt-caption text-center">
+                <h3 class="dt-title">
+                  Sun Edges perfomance
+                </h3>
+              </div>
+              <!-- /.dt-caption -->
+            </a>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <a href="#" class="dt-item">
+              <img src="static/carousel/style-02/16.jpg" alt="Image 16">
+
+              <div class="dt-caption text-center">
+                <h3 class="dt-title">
+                  Sun Edges perfomance
+                </h3>
+              </div>
+              <!-- /.dt-caption -->
+            </a>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+        </div>
+        <!-- /.swiper-wrapper -->
+      </div>
+      <!-- /.dt-image-carousel -->
+
+      <div class="dt-with-title" data-swiper="prev">
+        <h3 class="dt-title text-uppercase">special projects</h3>
+        <i class="fa fa-angle-left"></i>
+      </div>
+      <div data-swiper="next">
+        <i class="fa fa-angle-right"></i>
+      </div>
+    </div>
+    <!-- /.dt-item-carousel -->
+  </section>
+  <!-- /#dt-special-carousel-section -->
+
+  <!--======================================-->
+  <!--=        Popular Publication         =-->
+  <!--======================================-->
+  <section id="dt-popular-publication" class="section-padding">
+    <div class="container">
+      <div class="dt-section-heading sr-animated">
+        <div class="dt-section-title-style-3">
+          <h2 class="text-uppercase">Popular Publications</h2>
+        </div>
+        <!-- /.section-title-style-3 -->
+      </div>
+      <!-- /.dt-section-heading -->
+
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row dt-posts-list" data-column="2">
+            <div class="col-md-6">
+              <article class="dt-post sr-animated">
+                <header class="dt-entry-header">
+                  <div class="dt-entry-featured dt-format-standard border-style">
+                    <img src="static/blog/297x180/01.jpg" alt="Blog 1">
+                  </div>
+                  <!-- /.dt-entry-featured -->
+
+                  <h3 class="dt-title">
+                    <a href="#">Emotions in contempo</a>
+                  </h3>
+
+                  <div class="dt-entry-meta">
+                    <ul class="dt-meta">
+                      <li>By <a href="#">Alessanro Williamsburg</a></li>
+                      <li>Dec, 19, 2015</li>
+                      <li>Comments: <a href="#comments">15</a></li>
+                    </ul>
+                    <!-- /.dt-meta -->
+                  </div>
+                  <!-- /.dt-post-meta -->
+                </header>
+                <!-- /.dt-entry-header -->
+
+                <div class="dt-entry-content">
+                  IPhone drinking vinegar salvia synth portland. Kale chips try-hard green juice viral skateboard, vinyl umami beard. Schlitz art party pinterest raw denim gentrify iPhone....
+                </div>
+                <!-- /.dt-entry-content -->
+
+                <footer class="dt-entry-footer">
+                  <div class="dt-entry-more">
+                    <a href="#" class="dt-read-more">Read More ></a>
+                  </div>
+                  <!-- /.dt-entry-more -->
+
+                  <div class="dt-entry-category">
+                    Category: <a href="#">Editorial</a>
+                  </div>
+                  <!-- /.dt-entry-category -->
+                </footer>
+                <!-- /.dt-entry-footer -->
+              </article>
+              <!-- /.dt-post -->
+            </div>
+            <!-- /.col-md-6 -->
+
+            <div class="col-md-6">
+              <article class="dt-post sr-animated">
+                <header class="dt-entry-header">
+                  <div class="dt-entry-featured dt-format-standard border-style">
+                    <img src="static/blog/297x180/02.jpg" alt="Blog 2">
+                  </div>
+                  <!-- /.dt-entry-featured -->
+
+                  <h3 class="dt-title">
+                    <a href="#">mumblecore pop-up</a>
+                    <small>chia narwhal health goth butcher</small>
+                  </h3>
+
+                  <div class="dt-entry-meta">
+                    <ul class="dt-meta">
+                      <li>By <a href="#">John Doe</a></li>
+                      <li>Dec, 19, 2015</li>
+                      <li>Comments: <a href="#comments">15</a></li>
+                    </ul>
+                    <!-- /.dt-meta -->
+                  </div>
+                  <!-- /.dt-post-meta -->
+                </header>
+                <!-- /.dt-entry-header -->
+
+                <div class="dt-entry-content">
+                  Skateboard photo booth green juice, keytar etsy chicharrones gluten-free raw denim chillwave 90's lo-fi, ennui kickstarter heirloom master cleanse banjo narwhal. Chartreuse aesthetic...
+                </div>
+                <!-- /.dt-entry-content -->
+
+                <footer class="dt-entry-footer">
+                  <div class="dt-entry-more">
+                    <a href="#" class="dt-read-more">Read More ></a>
+                  </div>
+                  <!-- /.dt-entry-more -->
+
+                  <div class="dt-entry-category">
+                    Category: <a href="#">Art &amp; Style</a>
+                  </div>
+                  <!-- /.dt-entry-category -->
+                </footer>
+                <!-- /.dt-entry-footer -->
+              </article>
+              <!-- /.dt-post -->
+            </div>
+            <!-- /.col-md-6 -->
+
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.col-md-8 -->
+
+        <div class="col-md-4">
+          <div id="home-sidebar-area">
+            <section id="widget_latest-comments" class="widget sr-animated widget_dt_latest-comments">
+              <h4 class="widget-title text-uppercase">Latest Comments</h4>
+
+              <div class="dt-widget-container">
+                <div class="dt-latest-comments">
+                  <div class="dt-item">
+                    <div class="dt-comment-info">
+                      <div class="dt-avatar">
+                        <img src="static/widgets/latest-comments/01.jpg" alt="Comment 01">
+                      </div>
+                      <!-- /.dt-avatar -->
+
+                      <div class="dt-item-meta">
+                        <h4 class="dt-title">Thierry Lonford</h4>
+                        <div class="dt-date">Dec, 20, 2015 at 2 pm</div>
+                        <div class="dt-on-post">In <a href="#">“Weekend in Dublin”</a></div>
+                      </div>
+                      <!-- /.dt-meta -->
+                    </div>
+                    <!-- /.dt-comment-info -->
+
+                    <div class="dt-content">
+                      Fixie health goth crucifix food truck. Four dollar toast food truck echo park mustache kale chips. Intelligentsia portland authentic
+                    </div>
+                    <!-- /.dt-content -->
+
+                    <div class="dt-item-action">
+                      <ul class="dt-share">
+                        <li class="share-text">Share</li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-share"></i></a></li>
+                      </ul>
+                      <!-- /.dt-share -->
+
+                      <div class="dt-comment-love">
+                        <a href="#add-top-love" class="dt-add-to-fav"><i class="fa fa-heart"></i></a> (15)
+                      </div>
+                      <!-- /.dt-comment-love -->
+                    </div>
+                    <!-- /.dt-item-action -->
+                  </div>
+                  <!-- /.dt-item -->
+
+                  <div class="dt-item">
+                    <div class="dt-comment-info">
+                      <div class="dt-avatar">
+                        <img src="static/widgets/latest-comments/02.jpg" alt="Comment 02">
+                      </div>
+                      <!-- /.dt-avatar -->
+
+                      <div class="dt-item-meta">
+                        <h4 class="dt-title">Michael J. chicharrone</h4>
+                        <div class="dt-date">Dec, 20, 2015 at 2 pm</div>
+                        <div class="dt-on-post">In <a href="#">“Men trend”</a></div>
+                      </div>
+                      <!-- /.dt-meta -->
+                    </div>
+                    <!-- /.dt-comment-info -->
+
+                    <div class="dt-content">
+                      Literally tattooed cray street art poutine four dollar toast. Polaroid wolf poutine gentrify
+                    </div>
+                    <!-- /.dt-content -->
+
+                    <div class="dt-item-action">
+                      <ul class="dt-share">
+                        <li class="share-text">Share</li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-share"></i></a></li>
+                      </ul>
+                      <!-- /.dt-share -->
+
+                      <div class="dt-comment-love">
+                        <a href="#add-top-love" class="dt-add-to-fav"><i class="fa fa-heart"></i></a> (8)
+                      </div>
+                      <!-- /.dt-comment-love -->
+                    </div>
+                    <!-- /.dt-item-action -->
+                  </div>
+                  <!-- /.dt-item -->
+
+                </div>
+                <!-- /.dt-latest-comments -->
+              </div>
+              <!-- /.dt-widget-container -->
+
+            </section>
+            <!-- /#widget_{ID} -->
+          </div>
+          <!-- /#home-sidebar-area -->
+        </div>
+        <!-- /.col-md-4 -->
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /#dt-popular-publication -->
+
+  <!--=========================-->
+  <!--=        Footer         =-->
+  <!--=========================-->
+  <footer id="dt-site-footer" class="dt-site-footer footer-personal sr-animated">
+    <div class="container">
+      <div class="row dt-widget-area">
+        <div class="col-md-3">
+          <section id="widget_about-us" class="widget sr-animated widget_dt_about_us">
+            <h4 class="widget-title text-uppercase">About Ambio:</h4>
+
+            <div class="dt-widget-container">
+              <p>
+                Ambio 2015 trust fund pinterest chillwave tote bag you probably haven't heard of them, wayfarers brunch tacos squid.
+              </p>
+
+              <ul class="list-2column">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">My Works</a></li>
+              </ul>
+            </div>
+            <!-- /.dt-entry-featured -->
+
+          </section>
+          <!-- /#widget_{ID} -->
+        </div>
+        <!-- /.col-md-3 -->
+
+        <div class="col-md-3">
+          <section id="widget_recent-posts" class="widget sr-animated widget_dt_recent-posts">
+            <h4 class="widget-title text-uppercase">Recent Posts:</h4>
+
+            <div class="dt-widget-container">
+              <div class="dt-recent-posts">
+                <div class="dt-item">
+                  <div class="item-thumb">
+                    <img src="static/widgets/recent-posts/01.jpg" alt="Post 01">
+                  </div>
+                  <!-- /.item-thumb -->
+
+                  <div class="item-content">
+                    <h4 class="item-title"><a href="#">My Top5 Beauty Tricks</a></h4>
+                    <div class="item-date">
+                      <a href="#">May 10, 2016</a>
+                    </div>
+                    <!-- /.item-date -->
+                  </div>
+                  <!-- /.item-content -->
+                </div>
+                <!-- /.dt-item -->
+
+                <div class="dt-item">
+                  <div class="item-thumb">
+                    <img src="static/widgets/recent-posts/02.jpg" alt="Post 02">
+                  </div>
+                  <!-- /.item-thumb -->
+
+                  <div class="item-content">
+                    <h4 class="item-title"><a href="#">Tilde messenger bag poutine</a></h4>
+                    <div class="item-date">
+                      <a href="#">Apr 2, 2016</a>
+                    </div>
+                    <!-- /.item-date -->
+                  </div>
+                  <!-- /.item-content -->
+                </div>
+                <!-- /.dt-item -->
+
+                <div class="dt-item">
+                  <div class="item-thumb">
+                    <img src="static/widgets/recent-posts/03.jpg" alt="Post 03">
+                  </div>
+                  <!-- /.item-thumb -->
+
+                  <div class="item-content">
+                    <h4 class="item-title"><a href="#">recreation. new sources of strength and inspiration</a></h4>
+                    <div class="item-date">
+                      <a href="#">Mar 23, 2016</a>
+                    </div>
+                    <!-- /.item-date -->
+                  </div>
+                  <!-- /.item-content -->
+                </div>
+                <!-- /.dt-item -->
+
+              </div>
+              <!-- /.dt-recent-posts -->
+            </div>
+            <!-- /.dt-widget-container -->
+
+          </section>
+          <!-- /#widget_{ID} -->
+        </div>
+        <!-- /.col-md-3 -->
+
+        <div class="col-md-3">
+          <section id="widget_recent-tweets" class="widget sr-animated widget_dt_recent-tweets">
+            <h4 class="widget-title text-uppercase">Recent Tweets:</h4>
+
+            <div class="dt-widget-container">
+              <div class="dt-recent-tweets">
+                <div class="dt-item">
+                  <span><a href="#">@torbaracom</a></span>
+                  <span>Brunch photo booth post-ironic, craft beer.</span>
+                  <span><a href="#">https://t.co/OD8P10oywD</a></span>
+                  <span><a href="#">2 hour Ago</a></span>
+                </div>
+                <!-- /.dt-item -->
+
+                <div class="dt-item">
+                  <span><a href="#">@torbaracom</a></span>
+                  <span>Craft beer quinoa bespoke slow-carb chambray. </span>
+                  <span><a href="#">https://t.co/yUUvnxOVVE</a></span>
+                  <span><a href="#">14 hour Ago</a></span>
+                </div>
+                <!-- /.dt-item -->
+              </div>
+              <!-- /.dt-recent-tweets -->
+            </div>
+            <!-- /.dt-widget-container -->
+
+          </section>
+          <!-- /#widget_{ID} -->
+        </div>
+        <!-- /.col-md-3 -->
+
+        <div class="col-md-3">
+          <section id="widget_latest-photos" class="widget sr-animated widget_dt_latest-photos">
+            <h4 class="widget-title text-uppercase">Latest Photos:</h4>
+
+            <div class="dt-widget-container">
+              <div class="dt-latest-photos" data-area="isotope">
+                <div class="photo-items" data-area="isotope-container">
+                  <div class="dt-gallery-item dt-grid-item">
+                    <a href="#"><img src="static/widgets/latest-photos/01.jpg" alt="01"></a>
+                  </div>
+                  <!-- ./dt-gallery-item dt-grid-item -->
+                  <div class="dt-gallery-item dt-grid-item">
+                    <a href="#"><img src="static/widgets/latest-photos/02.jpg" alt="02"></a>
+                  </div>
+                  <!-- ./dt-gallery-item dt-grid-item -->
+                  <div class="dt-gallery-item dt-grid-item">
+                    <a href="#"><img src="static/widgets/latest-photos/03.jpg" alt="03"></a>
+                  </div>
+                  <!-- ./dt-gallery-item dt-grid-item -->
+                  <div class="dt-gallery-item dt-grid-item">
+                    <a href="#"><img src="static/widgets/latest-photos/04.jpg" alt="04"></a>
+                  </div>
+                  <!-- ./dt-gallery-item dt-grid-item -->
+                </div>
+                <!-- /.photo-items -->
+              </div>
+              <!-- /.dt-latest-photos -->
+            </div>
+            <!-- /.dt-widget-container -->
+
+          </section>
+          <!-- /#widget_{ID} -->
+        </div>
+        <!-- /.col-md-3 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <div class="footer-copyright-area sr-animated">
+      <div class="container">
+        <div class="dt-copyrigts-info">
+          <div class="dt-copyrights pull-left">
+            &copy; TORBARA all rights reserved.
+          </div>
+          <!-- /.dt-copyrights -->
+
+          <ul class="dt-social-icons list-inline pull-right">
+            <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" title="Soundcloud"><i class="fa fa-soundcloud"></i></a></li>
+            <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+          <!-- /.dt-social-icons -->
+        </div>
+        <!-- /.dt-copyrigts-info -->
+        <a href="#back-to-top-position" class="dt-back-to-top text-center" data-type="section-switch">
+          Back To Top
+        </a>
+        <!-- /.dt-back-to-top -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.footer-copyright-area -->
+
+  </footer>
+  <!-- /#dt-site-footer -->
+
+
+  <!--=====  Dependency Scripts  ======-->
+  <script src="dependencies/jquery/jquery.min.js"></script>
+  <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+  <script src="dependencies/isotope/isotope.pkgd.min.js"></script>
+  <script src="dependencies/scrollreveal/scrollreveal.min.js"></script>
+  <script src="dependencies/smoothscroll/SmoothScroll.js"></script>
+  <script src="dependencies/Swiper/js/swiper.min.js"></script>
+  <script src="https://maps.google.com/maps/api/js"></script>
+  <script src="dependencies/gmap3/gmap3.min.js"></script>
+  <script src="dependencies/jquery.countdown/jquery.countdown.min.js"></script>
+  <!-- <script src="dependencies/mediaelement/mediaelement-and-player.min.js"></script> -->
+
+  <!--=====  App Scripts  ======-->
+  <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,2145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--=====  Meta Data  ======-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ambio — Unique Personal Blog</title>
+
+  <!--=====  Application Icons  ======-->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="assets/img/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/img/icons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="assets/img/icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="assets/img/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="assets/img/icons/manifest.json">
+  <link rel="mask-icon" href="assets/img/icons/safari-pinned-tab.svg">
+  <link rel="shortcut icon" href="assets/img/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="assets/img/icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="assets/img/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!--=====  Dependency Styles  ======-->
+  <link rel="stylesheet" href="dependencies/loaders.css/loaders.min.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/font-awesome/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/Swiper/css/swiper.min.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/animate.css/animate.min.css" type="text/css">
+
+  <!--=====  App Styles  ======-->
+  <link rel="stylesheet" href="assets/css/app.css" type="text/css">
+
+  <!--=====  Google Web Fonts  ======-->
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  <style>
+    /* Preloader */
+
+    #preloader {
+      /*display: none;*/
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #0f161e;
+      z-index: 9999;
+    }
+
+    #loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  </style>
+
+</head>
+
+<body id="home-v1" class="home-v1">
+  <div id="preloader">
+    <div id="loader">
+      <div class="loader-inner ball-scale-multiple">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- /#loader -->
+  </div>
+  <!-- /#preloader -->
+  <div id="back-to-top-position"></div>
+
+
+  <!--==============================-->
+  <!--=        Site header         =-->
+  <!--==============================-->
+  <header id="dt-site-header" class="sliding-menu-enabled">
+    <div id="dt-logo-and-social">
+      <div id="dt-menu-trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- /#dt-menu-trigger -->
+
+      <div id="dt-logo">
+        <a href="index.html">
+          <img src="assets/img/logo.png" alt="Ambio">
+        </a>
+      </div>
+      <!-- #dt-logo -->
+
+      <ul class="dt-social-icons vertical text-center">
+        <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#" title="Soundcloud"><i class="fa fa-soundcloud"></i></a></li>
+        <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+      <!-- /.dt-social-icons -->
+    </div>
+    <!-- /#dt-logo-and-social -->
+
+    <div id="dt-site-menu">
+
+      <div class="menu-container">
+        <ul class="nav-menu">
+          <li class="current-menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item-has-children">
+            <a href="#">Blog</a>
+            <ul class="sub-menu">
+              <li><a href="blog-masonry.html">Masonry Blog</a></li>
+              <li><a href="blog-sidebar.html">Sidebar Blog</a></li>
+              <li><a href="blog-full-width.html">Fullwidth Blog</a></li>
+              <li><a href="blog-single-sidebar.html">Single post sidebar</a></li>
+              <li><a href="blog-single-full.html">Single post fullwidth</a></li>
+            </ul>
+            <!-- /.sub-menu -->
+          </li>
+          <li class="menu-item-has-children">
+            <a href="#">Works</a>
+            <ul class="sub-menu">
+              <li><a href="work-photo-gallery.html">Gallery</a></li>
+              <li><a href="work-video-gallery.html">Video</a></li>
+              <li><a href="work-description.html">Description</a></li>
+            </ul>
+            <!-- /.sub-menu -->
+          </li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+          <li class="menu-item-has-children">
+            <a href="#">Pages</a>
+            <ul class="sub-menu">
+              <li><a href="error-page.html">Error Page</a></li>
+              <li><a href="offline.html">Offline Page</a></li>
+              <li><a href="coming-soon.html">Coming Soon</a></li>
+            </ul>
+            <!-- /.sub-menu -->
+          </li>
+        </ul>
+        <!-- /.nav-menus -->
+      </div>
+      <!-- /.menu-container -->
+
+      <div id="dt-search-and-links">
+        <form class="dt-search-form" action="index.html" method="get">
+          <input type="text" name="s" id="search" value="" />
+          <button type="submit" id="search-submit" title="Submit"><i class="fa fa-search"></i></button>
+        </form>
+        <!-- /.dt-search-form -->
+
+        <ul class="dt-quick-links">
+          <li><a href="#login">Login</a></li>
+          <li><a href="#register">Register</a></li>
+        </ul>
+        <!-- /.dt-quick-links -->
+      </div>
+      <!-- /#dt-search-and-links -->
+
+    </div>
+    <!-- /#dt-site-menu -->
+  </header>
+  <!-- /#dt-site-header -->
+
+  <!--=========================-->
+  <!--=        Banner         =-->
+  <!--=========================-->
+  <section id="dt-main-slider-section" class="dt-main-slider sr-animated" data-carousel="swiper">
+    <div class="swiper-container" data-swiper="container" data-loop="true" data-autoplay="3000">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="img-responsive" src="static/slider/slide-01/background.png" alt="Slide 01">
+        </div>
+        <!-- /.swiper-slide -->
+
+        <div class="swiper-slide">
+          <img class="img-responsive" src="static/slider/slide-02/background.png" alt="Slide 02">
+        </div>
+        <!-- /.swiper-slide -->
+
+        <div class="swiper-slide">
+          <img class="img-responsive" src="static/slider/slide-03/background.png" alt="Slide 03">
+        </div>
+        <!-- /.swiper-slide -->
+      </div>
+      <!-- /.swiper-wrapper -->
+    </div>
+    <!-- /.swiper-container -->
+
+    <div id="dt-unique-pagination-jhrnq8u4o" data-swiper="pagination"></div>
+
+    <a href="#dt-who-we-are-section" class="dt-section-switch" data-type="section-switch">
+      <span class="dt-angle-shape"></span>
+    </a>
+  </section>
+  <!-- /#dt-main-slider-section -->
+
+  <!--=============================-->
+  <!--=        Who We Are         =-->
+  <!--=============================-->
+  <section id="dt-who-we-are-section" class="section-padding">
+    <div class="dt-section-heading text-center">
+      <div class="container">
+
+        <h2 class="dt-section-title text-uppercase sr-animated">We Are Ambio</h2>
+
+        <div class="col-md-10 col-md-offset-1">
+          <div class="dt-section-description sr-animated">
+            We are The Ambio blog. Williamsburg ugh keffiyeh vegan cronut, microdosing bushwick viral. Kickstarter disrupt pour-over brunch pitchfork, etsy tofu master cleanse sartorial. Taxidermy franzen farm-to-table readymade. Gluten-free lumbersexual normcore,
+            plaid disrupt gochujang butcher.Hella normcore everyday carry street art, actually butcher master cleanse truffaut helvetica try-hard synth heirloom locavore knausgaard.
+          </div>
+          <!-- /.section-description -->
+        </div>
+        <!-- /.col-md-10 -->
+
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.dt-section-heading -->
+
+    <div id="dt-item-carousel-uniq-1" class="dt-item-carousel dt-style-01 sr-animated" data-carousel="swiper">
+      <div class="swiper-container" data-swiper="container" data-items="2" data-loop="true" data-space="35" data-autoplay="3000" data-breakpoints='{"5000": {"slidesPerView": 2}, "768": {"slidesPerView": 1}}'>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="dt-item">
+              <img src="static/carousel/style-01/01.jpg" alt="Image 01">
+
+              <a href="#" class="dt-caption text-center">
+                <h3 class="dt-title">
+                  Our popular projects
+                  <br>
+                  <span>in 2015</span>
+                </h3>
+              </a>
+              <!-- /.dt-caption -->
+            </div>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="dt-item">
+              <img src="static/carousel/style-01/02.jpg" alt="Image 02">
+
+              <a href="#" class="dt-caption text-center">
+                <h3 class="dt-title">
+                  Our popular projects
+                  <br>
+                  <span>in 2015</span>
+                </h3>
+              </a>
+              <!-- /.dt-caption -->
+            </div>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="dt-item">
+              <img src="static/carousel/style-01/03.jpg" alt="Image 03">
+
+              <a href="#" class="dt-caption text-center">
+                <h3 class="dt-title">
+                  Our popular projects
+                  <br>
+                  <span>in 2015</span>
+                </h3>
+              </a>
+              <!-- /.dt-caption -->
+            </div>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="dt-item">
+              <img src="static/carousel/style-01/04.jpg" alt="Image 04">
+
+              <a href="#" class="dt-caption text-center">
+                <h3 class="dt-title">
+                  Our popular projects
+                  <br>
+                  <span>in 2015</span>
+                </h3>
+              </a>
+              <!-- /.dt-caption -->
+            </div>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="dt-item">
+              <img src="static/carousel/style-01/05.jpg" alt="Image 05">
+
+              <a href="#" class="dt-caption text-center">
+                <h3 class="dt-title">
+                  Our popular projects
+                  <br>
+                  <span>in 2015</span>
+                </h3>
+              </a>
+              <!-- /.dt-caption -->
+            </div>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="dt-item">
+              <img src="static/carousel/style-01/06.jpg" alt="Image 06">
+
+              <a href="#" class="dt-caption text-center">
+                <h3 class="dt-title">
+                  Our popular projects
+                  <br>
+                  <span>in 2015</span>
+                </h3>
+              </a>
+              <!-- /.dt-caption -->
+            </div>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+        </div>
+        <!-- /.swiper-wrapper -->
+      </div>
+      <!-- /.swiper-container -->
+
+      <div id="dt-item-carousel-nav-ze558fxe-left" data-swiper="prev">
+        <i class="fa fa-angle-left"></i>
+      </div>
+      <div id="dt-item-carousel-nav-ze558fxe-right" data-swiper="next">
+        <i class="fa fa-angle-right"></i>
+      </div>
+    </div>
+    <!-- /.dt-item-carousel -->
+  </section>
+  <!-- /#dt-who-we-are-section -->
+
+  <!--================================-->
+  <!--=        From The Blog         =-->
+  <!--================================-->
+  <section id="dt-from-the-blog-section" class="section-padding" data-area="isotope">
+    <div class="container">
+      <div class="dt-section-heading text-center sr-animated">
+        <h2 class="dt-section-title text-uppercase">From The Blog</h2>
+        <div class="dt-section-description">
+          <ul class="dt-category-filter list-inline" data-filters>
+            <li><a class="dt-btn active" href="#" data-filter="*">All</a></li>
+            <li><a class="dt-btn" href="#" data-filter=".cat-1">New In</a></li>
+            <li><a class="dt-btn" href="#" data-filter=".cat-2">World</a></li>
+            <li><a class="dt-btn" href="#" data-filter=".cat-1">Digital</a></li>
+            <li><a class="dt-btn" href="#" data-filter=".cat-2">Music &amp; Movies</a></li>
+            <li><a class="dt-btn" href="#" data-filter=".cat-1">Art &amp; Style</a></li>
+            <li><a class="dt-btn" href="#" data-filter=".cat-2">Sports</a></li>
+            <li><a class="dt-btn" href="#" data-filter=".cat-1">City guides</a></li>
+            <li><a class="dt-btn" href="#" data-filter=".cat-2">Travel</a></li>
+            <li><a class="dt-btn" href="#" data-filter=".cat-1">Editorial</a></li>
+          </ul>
+          <!-- /.dt-category-filter -->
+        </div>
+        <!-- /.section-description -->
+      </div>
+      <!-- /.dt-section-heading -->
+
+      <div class="row">
+        <div id="dt-blog-entries-masonry" class="dt-blog-entries dt-masonry" data-column="2" data-area="isotope-container">
+          <!-- Article Item -->
+          <article class="dt-post dt-grid-item cat-1 sr-animated">
+            <header class="dt-entry-header">
+              <div class="dt-entry-featured dt-format-gallery" data-carousel="swiper">
+                <div id="dt-post-carousel-unque-wgxinuy8k" class="swiper-container dt-image-carousel" data-swiper="container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="static/blog/gallery/01.jpg" alt="Image 01">
+                    </div>
+                    <!-- /.swiper-slide -->
+
+                    <div class="swiper-slide">
+                      <img src="static/blog/gallery/02.jpg" alt="Image 02">
+                    </div>
+                    <!-- /.swiper-slide -->
+
+                    <div class="swiper-slide">
+                      <img src="static/blog/gallery/03.jpg" alt="Image 03">
+                    </div>
+                    <!-- /.swiper-slide -->
+                  </div>
+                  <!-- /.swiper-wrapper -->
+
+                  <div id="dt-unique-pagination-wgxinuy8k" data-swiper="pagination"></div>
+
+                  <div id="dt-item-carousel-nav-wgxinuy8k-left" data-swiper="prev">
+                    <i class="fa fa-angle-left"></i>
+                  </div>
+
+                  <div id="dt-item-carousel-nav-wgxinuy8k-right" data-swiper="next">
+                    <i class="fa fa-angle-right"></i>
+                  </div>
+                </div>
+                <!-- /#dt-post-carousel-unque-wgxinuy8k -->
+              </div>
+              <!-- /.dt-entry-featured -->
+
+              <h3 class="dt-title"><a href="#">Banjo literally paleo deep v godard</a></h3>
+
+              <div class="dt-entry-meta">
+                <ul class="dt-meta">
+                  <li>By <a href="#">John Doe</a></li>
+                  <li>Dec, 20, 2015</li>
+                  <li>Comments: <a href="#comments">0</a></li>
+                </ul>
+                <!-- /.dt-meta -->
+              </div>
+              <!-- /.dt-post-meta -->
+            </header>
+            <!-- /.dt-entry-header -->
+
+            <div class="dt-entry-content">
+              Skateboard photo booth green juice, keytar etsy chicharrones gluten-free raw denim chillwave artisan bespoke. Seitan disrupt fashion axe 90's lo-fi, ennui kickstarter heirloom master cleanse banjo narwhal. Chartreuse etsy fixie schlitz viral gastropub
+              aesthetic...
+            </div>
+            <!-- /.dt-entry-content -->
+
+            <footer class="dt-entry-footer">
+              <div class="dt-entry-more">
+                <a href="#" class="dt-read-more">Read More ></a>
+              </div>
+              <!-- /.dt-entry-more -->
+
+              <div class="dt-entry-category">
+                Category: <a href="#">Digital</a>
+              </div>
+              <!-- /.dt-entry-category -->
+            </footer>
+            <!-- /.dt-entry-footer -->
+          </article>
+          <!-- /.dt-post -->
+
+          <!-- Article Item -->
+          <article class="dt-post dt-grid-item cat-2 sr-animated">
+            <header class="dt-entry-header">
+              <div class="dt-entry-featured dt-format-standard">
+                <img src="static/blog/02.jpg" alt="Blog 2">
+              </div>
+              <!-- /.dt-entry-featured -->
+
+              <h3 class="dt-title">
+                <a href="#">Actually fanny pack ”Citrus” direct</a>
+                <small>trand fashion store in 2015</small>
+              </h3>
+
+              <div class="dt-entry-meta">
+                <ul class="dt-meta">
+                  <li>By <a href="#">John Doe</a></li>
+                  <li>Dec, 19, 2015</li>
+                  <li>Comments: <a href="#comments">0</a></li>
+                </ul>
+                <!-- /.dt-meta -->
+              </div>
+              <!-- /.dt-post-meta -->
+            </header>
+            <!-- /.dt-entry-header -->
+
+            <div class="dt-entry-content">
+              Trust fund quinoa biodiesel, PBR&amp;B butcher vegan readymade crucifix twee jean shorts bitters letterpress waistcoat banjo retro. Taxidermy franzen farm-to-table readymade. Gluten-free lumbersexual normcore, plaid disrupt gochujang butcher iPhone celiac...
+            </div>
+            <!-- /.dt-entry-content -->
+
+            <footer class="dt-entry-footer">
+              <div class="dt-entry-more">
+                <a href="#" class="dt-read-more">Read More ></a>
+              </div>
+              <!-- /.dt-entry-more -->
+
+              <div class="dt-entry-category">
+                Category: <a href="#">Music &amp; Movies</a>
+              </div>
+              <!-- /.dt-entry-category -->
+            </footer>
+            <!-- /.dt-entry-footer -->
+          </article>
+          <!-- /.dt-post -->
+
+          <!-- Article Item -->
+          <article class="dt-post dt-grid-item cat-2 sr-animated">
+            <header class="dt-entry-header">
+              <div class="dt-entry-featured dt-format-standard">
+                <img src="static/blog/04.jpg" alt="Blog 4">
+              </div>
+              <!-- /.dt-entry-featured -->
+
+              <h3 class="dt-title"><a href="#">Melissa Johnson Interview</a></h3>
+
+              <div class="dt-entry-meta">
+                <ul class="dt-meta">
+                  <li>By <a href="#">John Doe</a></li>
+                  <li>Dec, 19, 2015</li>
+                  <li>Comments: <a href="#comments">0</a></li>
+                </ul>
+                <!-- /.dt-meta -->
+              </div>
+              <!-- /.dt-post-meta -->
+            </header>
+            <!-- /.dt-entry-header -->
+
+            <div class="dt-entry-content">
+              Skateboard photo booth green juice, keytar etsy chicharrones gluten-free raw denim chillwave artisan bespoke. Seitan disrupt fashion axe 90's lo-fi, ennui kickstarter heirloom master cleanse banjo narwhal. Chartreuse etsy fixie schlitz viral gastropub
+              aesthetic...
+            </div>
+            <!-- /.dt-entry-content -->
+
+            <footer class="dt-entry-footer">
+              <div class="dt-entry-more">
+                <a href="#" class="dt-read-more">Read More ></a>
+              </div>
+              <!-- /.dt-entry-more -->
+
+              <div class="dt-entry-category">
+                Category: <a href="#">Art &amp; Style</a>
+              </div>
+              <!-- /.dt-entry-category -->
+            </footer>
+            <!-- /.dt-entry-footer -->
+          </article>
+          <!-- /.dt-post -->
+
+          <!-- Article Item -->
+          <article class="dt-post dt-grid-item cat-1 sr-animated">
+            <header class="dt-entry-header">
+              <div class="dt-entry-featured dt-format-standard">
+                <img src="static/blog/03.jpg" alt="Blog 3">
+              </div>
+              <!-- /.dt-entry-featured -->
+
+              <h3 class="dt-title">
+                <a href="#">Tilde intelligentsia fap</a>
+                <small>franzen viral wayfarers, readymade mustache</small>
+              </h3>
+
+              <div class="dt-entry-meta">
+                <ul class="dt-meta">
+                  <li>By <a href="#">John Doe</a></li>
+                  <li>Dec, 19, 2015</li>
+                  <li>Comments: <a href="#comments">0</a></li>
+                </ul>
+                <!-- /.dt-meta -->
+              </div>
+              <!-- /.dt-post-meta -->
+            </header>
+            <!-- /.dt-entry-header -->
+
+            <div class="dt-entry-content">
+              Trust fund quinoa biodiesel, PBR&amp;B butcher vegan readymade crucifix twee jean shorts bitters letterpress waistcoat banjo retro. Taxidermy franzen farm-to-table readymade. Gluten-free lumbersexual normcore, plaid disrupt gochujang butcher iPhone celiac...
+            </div>
+            <!-- /.dt-entry-content -->
+
+            <footer class="dt-entry-footer">
+              <div class="dt-entry-more">
+                <a href="#" class="dt-read-more">Read More ></a>
+              </div>
+              <!-- /.dt-entry-more -->
+
+              <div class="dt-entry-category">
+                Category: <a href="#">Music &amp; Movies</a>
+              </div>
+              <!-- /.dt-entry-category -->
+            </footer>
+            <!-- /.dt-entry-footer -->
+          </article>
+          <!-- /.dt-post -->
+        </div>
+        <!-- /#dt-blog-entries-masonry -->
+      </div>
+      <!-- /.row -->
+
+      <hr data-padding-bottom="85px">
+
+      <div class="dt-more-posts-link text-center sr-animated">
+        <a href="#more-posts" class="dt-btn dt-btn-medium">Go to the Blog</a>
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /#dt-from-the-blog-section -->
+
+  <!--===========================-->
+  <!--=        Ad Space         =-->
+  <!--===========================-->
+  <section id="dt-ad-space-section" class="dt-ad-space section-padding sr-animated">
+    <div class="dt-ad-placed black-bg">
+      <a href="#ad-link" class="dt-ad-item">
+        <img class="img-responsive" src="static/ad/01.jpg" alt="Ad Placed">
+      </a>
+    </div>
+    <!-- /.dt-ad-placed -->
+  </section>
+  <!-- /#dt-ad-space-section -->
+
+  <!--======================================-->
+  <!--=        Most Watched Videos         =-->
+  <!--======================================-->
+  <section id="dt-most-watched-videos-section" class="dt-most-watched-video section-padding">
+    <div class="container">
+      <div class="dt-section-heading sr-animated">
+        <div class="dt-section-title-style-2">
+          <h2 class="text-uppercase">Most watched videos</h2>
+          <a href="#view-all" class="dt-sub-link">See all videos > </a>
+        </div>
+        <!-- /.section-title-style-2 -->
+      </div>
+      <!-- /.section-heading -->
+
+      <div class="row">
+        <div class="col-md-8">
+          <div class="dt-video-item sr-animated">
+            <div class="dt-video-thumb">
+              <img src="static/blog/video-thumbs/01.jpg" alt="Video 01">
+              <a href="#" class="dt-play-btn"><span>Play</span></a>
+            </div>
+            <!-- /.dt-vide-thumb -->
+
+            <h3 class="dt-video-title"><a href="#">Art perfomance “red forenoon”</a></h3>
+            <div class="dt-video-desciption">
+              Chambray brooklyn plaid, chia next level squid ennui actually meggings mumblecore godard photo booth mustache. Whatever waistcoat farm-to-table lo-fi tote bag pabst, hoodie fixie single-origin coffee thundercats. Normcore offal freegan twee, brooklyn
+              kinfolk pop-up hoodie truffaut. Hoodie chia green juice letterpress, paleo sartorial marfa. Lomo yr bespoke health goth thundercats.
+            </div>
+            <!-- /.dt-vide-desciption -->
+          </div>
+          <!-- /.dt-video-item -->
+        </div>
+        <!-- /.col-md-8 -->
+
+        <div class="col-md-4">
+          <div class="dt-videos-widget">
+            <div class="dt-video-item sr-animated">
+              <div class="dt-video-thumb">
+                <img src="static/blog/video-thumbs/02.jpg" alt="Video 02">
+                <a href="#" class="dt-play-btn"><span>Play</span></a>
+              </div>
+              <!-- /.dt-video-thumb -->
+            </div>
+            <!-- /.dt-video-item -->
+
+            <div class="dt-video-item sr-animated">
+              <div class="dt-video-thumb">
+                <img src="static/blog/video-thumbs/03.jpg" alt="Video 03">
+                <a href="#" class="dt-play-btn"><span>Play</span></a>
+              </div>
+              <!-- /.dt-video-thumb -->
+            </div>
+            <!-- /.dt-video-item -->
+
+            <div class="dt-video-item sr-animated">
+              <div class="dt-video-thumb">
+                <img src="static/blog/video-thumbs/04.jpg" alt="Video 04">
+                <a href="#" class="dt-play-btn"><span>Play</span></a>
+              </div>
+              <!-- /.dt-video-thumb -->
+            </div>
+            <!-- /.dt-video-item -->
+          </div>
+          <!-- /.dt-videos-widget -->
+        </div>
+        <!-- /.col-md-4 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /#dt-most-watched-videos-section -->
+
+  <!--=============================-->
+  <!--=        Hot Photos         =-->
+  <!--=============================-->
+  <section id="dt-hot-photos-section" class="dt-hot-photos section-padding" data-area="isotope">
+    <div class="dt-photo-gallery" data-area="isotope-container">
+      <div class="dt-gallery-item sr-animated dt-grid-item">
+        <img src="static/gallery/01.jpg" alt="Portfolio 01">
+        <div class="dt-item-info">
+          <div class="dt-info-content text-center">
+            <h3>Bootle</h3>
+            <ul class="dt-social-icons list-inline">
+              <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <!-- /.dt-social-icons -->
+          </div>
+          <!-- /.dt-info-content -->
+        </div>
+        <!-- /.dt-item-info -->
+      </div>
+      <!-- /.dt-gallery-item dt-grid-item -->
+
+      <div class="dt-gallery-item sr-animated dt-grid-item">
+        <img src="static/gallery/02.jpg" alt="Portfolio 02">
+        <div class="dt-item-info">
+          <div class="dt-info-content text-center">
+            <h3>Cereals and Milk</h3>
+            <ul class="dt-social-icons list-inline">
+              <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <!-- /.dt-social-icons -->
+          </div>
+          <!-- /.dt-info-content -->
+        </div>
+        <!-- /.dt-item-info -->
+      </div>
+      <!-- /.dt-gallery-item dt-grid-item -->
+
+      <div class="dt-gallery-item sr-animated dt-grid-item size-3">
+        <img src="static/gallery/03.jpg" alt="Portfolio 03">
+        <div class="dt-item-info">
+          <div class="dt-info-content text-center">
+            <h3>Cereals and Milk</h3>
+            <ul class="dt-social-icons list-inline">
+              <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <!-- /.dt-social-icons -->
+          </div>
+          <!-- /.dt-info-content -->
+        </div>
+        <!-- /.dt-item-info -->
+      </div>
+      <!-- /.dt-gallery-item dt-grid-item -->
+
+      <div class="dt-gallery-item sr-animated dt-grid-item size-2">
+        <img src="static/gallery/04.jpg" alt="Portfolio 04">
+        <div class="dt-item-info">
+          <div class="dt-info-content text-center">
+            <h3>Cereals and Milk</h3>
+            <ul class="dt-social-icons list-inline">
+              <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <!-- /.dt-social-icons -->
+          </div>
+          <!-- /.dt-info-content -->
+        </div>
+        <!-- /.dt-item-info -->
+      </div>
+      <!-- /.dt-gallery-item dt-grid-item -->
+
+      <div class="dt-gallery-item sr-animated dt-grid-item size-3 dt-title-item">
+        <div class="dt-item-info dt-gallery-title text-center">
+          <div class="dt-info-content">
+            <h3 class="dt-section-title text-uppercase">Hot Photos</h3>
+            <div class="clearfix"></div>
+            <a href="#more-photos">See Gallery ></a>
+          </div>
+          <!-- /.dt-info-content -->
+        </div>
+        <!-- /.dt-gallery-title -->
+      </div>
+      <!-- /.dt-gallery-item dt-grid-item -->
+
+      <div class="dt-gallery-item sr-animated dt-grid-item size-2">
+        <img src="static/gallery/05.jpg" alt="Portfolio 05">
+        <div class="dt-item-info">
+          <div class="dt-info-content text-center">
+            <h3>Cereals and Milk</h3>
+            <ul class="dt-social-icons list-inline">
+              <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <!-- /.dt-social-icons -->
+          </div>
+          <!-- /.dt-info-content -->
+        </div>
+        <!-- /.dt-item-info -->
+      </div>
+      <!-- /.dt-gallery-item dt-grid-item -->
+
+      <div class="dt-gallery-item sr-animated dt-grid-item size-4">
+        <img src="static/gallery/06.jpg" alt="Portfolio 06">
+        <div class="dt-item-info">
+          <div class="dt-info-content text-center">
+            <h3>Cereals and Milk</h3>
+            <ul class="dt-social-icons list-inline">
+              <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <!-- /.dt-social-icons -->
+          </div>
+          <!-- /.dt-info-content -->
+        </div>
+        <!-- /.dt-item-info -->
+      </div>
+      <!-- /.dt-gallery-item dt-grid-item -->
+
+      <div class="dt-gallery-item sr-animated dt-grid-item size-3">
+        <img src="static/gallery/07.jpg" alt="Portfolio 07">
+        <div class="dt-item-info">
+          <div class="dt-info-content text-center">
+            <h3>Cereals and Milk</h3>
+            <ul class="dt-social-icons list-inline">
+              <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <!-- /.dt-social-icons -->
+          </div>
+          <!-- /.dt-info-content -->
+        </div>
+        <!-- /.dt-item-info -->
+      </div>
+      <!-- /.dt-gallery-item dt-grid-item -->
+    </div>
+    <!-- /.dt-photo-gallery -->
+  </section>
+  <!-- /#dt-hot-photos-section -->
+
+  <!--===================================-->
+  <!--=        Special Carousel         =-->
+  <!--===================================-->
+  <section id="dt-special-carousel-section" class="section-padding">
+    <div class="dt-item-carousel dt-style-02 sr-animated" data-carousel="swiper">
+      <div class="swiper-container" data-swiper="container" data-items="3" data-loop="true" data-space="90" data-autoplay="3000" data-center="true" data-breakpoints='{"5000": {"slidesPerView": 3}, "1024": {"slidesPerView": 2}, "768": {"slidesPerView": 1}}'>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="dt-item">
+              <img src="static/carousel/style-02/01.jpg" alt="Image 01">
+
+              <div class="dt-caption text-center">
+                <h3 class="dt-title">
+                  Sun Edges perfomance
+                </h3>
+              </div>
+              <!-- /.dt-caption -->
+            </a>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <a href="#" class="dt-item">
+              <img src="static/carousel/style-02/02.jpg" alt="Image 02">
+
+              <div class="dt-caption text-center">
+                <h3 class="dt-title">
+                  Sun Edges perfomance
+                </h3>
+              </div>
+              <!-- /.dt-caption -->
+            </a>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <a href="#" class="dt-item">
+              <img src="static/carousel/style-02/03.jpg" alt="Image 01">
+
+              <div class="dt-caption text-center">
+                <h3 class="dt-title">
+                  Sun Edges perfomance
+                </h3>
+              </div>
+              <!-- /.dt-caption -->
+            </a>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+        </div>
+        <!-- /.swiper-wrapper -->
+      </div>
+      <!-- /.dt-image-carousel -->
+
+      <div class="dt-with-title" data-swiper="prev">
+        <h3 class="dt-title text-uppercase">special projects</h3>
+        <i class="fa fa-angle-left"></i>
+      </div>
+      <div data-swiper="next">
+        <i class="fa fa-angle-right"></i>
+      </div>
+    </div>
+    <!-- /.dt-item-carousel -->
+  </section>
+  <!-- /#dt-special-carousel-section -->
+
+  <!--========================================-->
+  <!--=        Popular Articles Now          =-->
+  <!--========================================-->
+  <section id="dt-popular-articles-now-section" class="dt-popular-articles-now section-padding">
+    <div class="container">
+      <div class="dt-section-heading text-center">
+        <h2 class="dt-section-title text-uppercase">Popular Articles Now</h2>
+      </div>
+      <!-- /.dt-section-heading -->
+
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row dt-posts-list" data-column="2">
+            <div class="col-md-6">
+              <article class="dt-post sr-animated">
+                <header class="dt-entry-header">
+                  <div class="dt-entry-featured dt-format-standard">
+                    <img src="static/blog/370x255/01.jpg" alt="Blog 1">
+                  </div>
+                  <!-- /.dt-entry-featured -->
+
+                  <h3 class="dt-title">
+                    <a href="#">My weekend in Dublin</a>
+                  </h3>
+
+                  <div class="dt-entry-meta">
+                    <ul class="dt-meta">
+                      <li>By <a href="#">Alessanro Williamsburg</a></li>
+                      <li>Dec, 19, 2015</li>
+                      <li>Comments: <a href="#comments">15</a></li>
+                    </ul>
+                    <!-- /.dt-meta -->
+                  </div>
+                  <!-- /.dt-post-meta -->
+                </header>
+                <!-- /.dt-entry-header -->
+
+                <div class="dt-entry-content">
+                  IPhone drinking vinegar salvia synth portland. Kale chips try-hard green juice viral skateboard, vinyl umami beard. Schlitz art party pinterest raw denim gentrify iPhone....
+                </div>
+                <!-- /.dt-entry-content -->
+
+                <footer class="dt-entry-footer">
+                  <div class="dt-entry-more">
+                    <a href="#" class="dt-read-more">Read More ></a>
+                  </div>
+                  <!-- /.dt-entry-more -->
+
+                  <div class="dt-entry-category">
+                    Category: <a href="#">Editorial</a>
+                  </div>
+                  <!-- /.dt-entry-category -->
+                </footer>
+                <!-- /.dt-entry-footer -->
+              </article>
+              <!-- /.dt-post -->
+            </div>
+            <!-- /.col-md-6 -->
+
+            <div class="col-md-6">
+              <article class="dt-post sr-animated">
+                <header class="dt-entry-header">
+                  <div class="dt-entry-featured dt-format-standard">
+                    <img src="static/blog/370x255/02.jpg" alt="Blog 2">
+                  </div>
+                  <!-- /.dt-entry-featured -->
+
+                  <h3 class="dt-title">
+                    <a href="#">men trend</a>
+                    <small>Review of the best men's stores in London</small>
+                  </h3>
+
+                  <div class="dt-entry-meta">
+                    <ul class="dt-meta">
+                      <li>By <a href="#">John Doe</a></li>
+                      <li>Dec, 19, 2015</li>
+                      <li>Comments: <a href="#comments">15</a></li>
+                    </ul>
+                    <!-- /.dt-meta -->
+                  </div>
+                  <!-- /.dt-post-meta -->
+                </header>
+                <!-- /.dt-entry-header -->
+
+                <div class="dt-entry-content">
+                  Skateboard photo booth green juice, keytar etsy chicharrones gluten-free raw denim chillwave 90's lo-fi, ennui kickstarter heirloom master cleanse banjo narwhal. Chartreuse aesthetic...
+                </div>
+                <!-- /.dt-entry-content -->
+
+                <footer class="dt-entry-footer">
+                  <div class="dt-entry-more">
+                    <a href="#" class="dt-read-more">Read More ></a>
+                  </div>
+                  <!-- /.dt-entry-more -->
+
+                  <div class="dt-entry-category">
+                    Category: <a href="#">Art &amp; Style</a>
+                  </div>
+                  <!-- /.dt-entry-category -->
+                </footer>
+                <!-- /.dt-entry-footer -->
+              </article>
+              <!-- /.dt-post -->
+            </div>
+            <!-- /.col-md-6 -->
+
+            <div class="col-md-6">
+              <article class="dt-post sr-animated">
+                <header class="dt-entry-header">
+                  <div class="dt-entry-featured dt-format-standard">
+                    <img src="static/blog/370x255/03.jpg" alt="Blog 3">
+                  </div>
+                  <!-- /.dt-entry-featured -->
+
+                  <h3 class="dt-title">
+                    <a href="#">mumblecore pop-up</a>
+                    <small>chia narwhal health goth butcher</small>
+                  </h3>
+
+                  <div class="dt-entry-meta">
+                    <ul class="dt-meta">
+                      <li>By <a href="#">John Doe</a></li>
+                      <li>Dec, 19, 2015</li>
+                      <li>Comments: <a href="#comments">15</a></li>
+                    </ul>
+                    <!-- /.dt-meta -->
+                  </div>
+                  <!-- /.dt-post-meta -->
+                </header>
+                <!-- /.dt-entry-header -->
+
+                <div class="dt-entry-content">
+                  Organic flexitarian swag cronut, ethical shabby chic chia venmo 8-bit craft beer plaid hashtag sustainable stumptown. Narwhal synth small batch next level chia lomo. Selfies twee hella, etsy ugh gentrify knausgaard pug ...
+                </div>
+                <!-- /.dt-entry-content -->
+
+                <footer class="dt-entry-footer">
+                  <div class="dt-entry-more">
+                    <a href="#" class="dt-read-more">Read More ></a>
+                  </div>
+                  <!-- /.dt-entry-more -->
+
+                  <div class="dt-entry-category">
+                    Category: <a href="#">World</a>
+                  </div>
+                  <!-- /.dt-entry-category -->
+                </footer>
+                <!-- /.dt-entry-footer -->
+              </article>
+              <!-- /.dt-post -->
+            </div>
+            <!-- /.col-md-6 -->
+
+            <div class="col-md-6">
+              <article class="dt-post sr-animated">
+                <header class="dt-entry-header">
+                  <div class="dt-entry-featured dt-format-standard">
+                    <img src="static/blog/370x255/04.jpg" alt="Blog 4">
+                  </div>
+                  <!-- /.dt-entry-featured -->
+
+                  <h3 class="dt-title">
+                    <a href="#">iPHONE REVIEW AND TESTING</a>
+                  </h3>
+
+                  <div class="dt-entry-meta">
+                    <ul class="dt-meta">
+                      <li>By <a href="#">Alessanro Williamsburg</a></li>
+                      <li>Dec, 19, 2015</li>
+                      <li>Comments: <a href="#comments">15</a></li>
+                    </ul>
+                    <!-- /.dt-meta -->
+                  </div>
+                  <!-- /.dt-post-meta -->
+                </header>
+                <!-- /.dt-entry-header -->
+
+                <div class="dt-entry-content">
+                  Skateboard photo booth green juice, keytar etsy chicharrones gluten-free raw denim chillwave 90's lo-fi, ennui kickstarter heirloom master cleanse banjo narwhal. Chartreuse aesthetic...
+                </div>
+                <!-- /.dt-entry-content -->
+
+                <footer class="dt-entry-footer">
+                  <div class="dt-entry-more">
+                    <a href="#" class="dt-read-more">Read More ></a>
+                  </div>
+                  <!-- /.dt-entry-more -->
+
+                  <div class="dt-entry-category">
+                    Category: <a href="#">Digital</a>
+                  </div>
+                  <!-- /.dt-entry-category -->
+                </footer>
+                <!-- /.dt-entry-footer -->
+              </article>
+              <!-- /.dt-post -->
+            </div>
+            <!-- /.col-md-6 -->
+
+            <div class="col-md-6">
+              <article class="dt-post sr-animated">
+                <header class="dt-entry-header">
+                  <div class="dt-entry-featured dt-format-standard">
+                    <img src="static/blog/370x255/05.jpg" alt="Blog 5">
+                  </div>
+                  <!-- /.dt-entry-featured -->
+
+                  <h3 class="dt-title">
+                    <a href="#">Aesthetic polaroid</a>
+                  </h3>
+
+                  <div class="dt-entry-meta">
+                    <ul class="dt-meta">
+                      <li>By <a href="#">Alessanro Williamsburg</a></li>
+                      <li>Dec, 19, 2015</li>
+                      <li>Comments: <a href="#comments">15</a></li>
+                    </ul>
+                    <!-- /.dt-meta -->
+                  </div>
+                  <!-- /.dt-post-meta -->
+                </header>
+                <!-- /.dt-entry-header -->
+
+                <div class="dt-entry-content">
+                  Skateboard photo booth green juice, keytar etsy chicharrones gluten-free raw denim chillwave 90's lo-fi, ennui kickstarter heirloom master cleanse banjo narwhal. Chartreuse aesthetic...
+                </div>
+                <!-- /.dt-entry-content -->
+
+                <footer class="dt-entry-footer">
+                  <div class="dt-entry-more">
+                    <a href="#" class="dt-read-more">Read More ></a>
+                  </div>
+                  <!-- /.dt-entry-more -->
+
+                  <div class="dt-entry-category">
+                    Category: <a href="#">Sports</a>
+                  </div>
+                  <!-- /.dt-entry-category -->
+                </footer>
+                <!-- /.dt-entry-footer -->
+              </article>
+              <!-- /.dt-post -->
+            </div>
+            <!-- /.col-md-6 -->
+
+            <div class="col-md-6">
+              <article class="dt-post sr-animated">
+                <header class="dt-entry-header">
+                  <div class="dt-entry-featured dt-format-standard">
+                    <img src="static/blog/370x255/06.jpg" alt="Blog 6">
+                  </div>
+                  <!-- /.dt-entry-featured -->
+
+                  <h3 class="dt-title">
+                    <a href="#">Popular from instagram period 2015</a>
+                    <small>Schlitz art party pinterest</small>
+                  </h3>
+
+                  <div class="dt-entry-meta">
+                    <ul class="dt-meta">
+                      <li>By <a href="#">John Doe</a></li>
+                      <li>Dec, 19, 2015</li>
+                      <li>Comments: <a href="#comments">15</a></li>
+                    </ul>
+                    <!-- /.dt-meta -->
+                  </div>
+                  <!-- /.dt-post-meta -->
+                </header>
+                <!-- /.dt-entry-header -->
+
+                <div class="dt-entry-content">
+                  Tumblr dreamcatcher salvia master cleanse typewriter whatever bicycle rightsbanjo lumbersexual tattooed, beard four loko tumblr literally pabst readymade distillery...
+                </div>
+                <!-- /.dt-entry-content -->
+
+                <footer class="dt-entry-footer">
+                  <div class="dt-entry-more">
+                    <a href="#" class="dt-read-more">Read More ></a>
+                  </div>
+                  <!-- /.dt-entry-more -->
+
+                  <div class="dt-entry-category">
+                    Category: <a href="#">World</a>
+                  </div>
+                  <!-- /.dt-entry-category -->
+                </footer>
+                <!-- /.dt-entry-footer -->
+              </article>
+              <!-- /.dt-post -->
+            </div>
+            <!-- /.col-md-6 -->
+
+            <div class="col-md-6">
+              <article class="dt-post sr-animated">
+                <header class="dt-entry-header">
+                  <div class="dt-entry-featured dt-format-standard">
+                    <img src="static/blog/370x255/07.jpg" alt="Blog 7">
+                  </div>
+                  <!-- /.dt-entry-featured -->
+
+                  <h3 class="dt-title">
+                    <a href="#">Schlitz art party</a>
+                  </h3>
+
+                  <div class="dt-entry-meta">
+                    <ul class="dt-meta">
+                      <li>By <a href="#">Alessanro Williamsburg</a></li>
+                      <li>Dec, 19, 2015</li>
+                      <li>Comments: <a href="#comments">15</a></li>
+                    </ul>
+                    <!-- /.dt-meta -->
+                  </div>
+                  <!-- /.dt-post-meta -->
+                </header>
+                <!-- /.dt-entry-header -->
+
+                <div class="dt-entry-content">
+                  IPhone drinking vinegar salvia synth portland. Kale chips try-hard green juice viral skateboard, vinyl umami beard. Schlitz art party pinterest raw denim gentrify iPhone....
+                </div>
+                <!-- /.dt-entry-content -->
+
+                <footer class="dt-entry-footer">
+                  <div class="dt-entry-more">
+                    <a href="#" class="dt-read-more">Read More ></a>
+                  </div>
+                  <!-- /.dt-entry-more -->
+
+                  <div class="dt-entry-category">
+                    Category: <a href="#">Music &amp;  Movies</a>
+                  </div>
+                  <!-- /.dt-entry-category -->
+                </footer>
+                <!-- /.dt-entry-footer -->
+              </article>
+              <!-- /.dt-post -->
+            </div>
+            <!-- /.col-md-6 -->
+
+            <div class="col-md-6">
+              <article class="dt-post sr-animated">
+                <header class="dt-entry-header">
+                  <div class="dt-entry-featured dt-format-standard">
+                    <img src="static/blog/370x255/08.jpg" alt="Blog 8">
+                  </div>
+                  <!-- /.dt-entry-featured -->
+
+                  <h3 class="dt-title">
+                    <a href="#">Smartphones crush test</a>
+                    <small>And small batch literally watch video now</small>
+                  </h3>
+
+                  <div class="dt-entry-meta">
+                    <ul class="dt-meta">
+                      <li>By <a href="#">John Doe</a></li>
+                      <li>Dec, 19, 2015</li>
+                      <li>Comments: <a href="#comments">15</a></li>
+                    </ul>
+                    <!-- /.dt-meta -->
+                  </div>
+                  <!-- /.dt-post-meta -->
+                </header>
+                <!-- /.dt-entry-header -->
+
+                <div class="dt-entry-content">
+                  Skateboard photo booth green juice, keytar etsy chicharrones gluten-free raw denim chillwave 90's lo-fi, ennui kickstarter heirloom master cleanse banjo narwhal. Chartreuse aesthetic...
+                </div>
+                <!-- /.dt-entry-content -->
+
+                <footer class="dt-entry-footer">
+                  <div class="dt-entry-more">
+                    <a href="#" class="dt-read-more">Read More ></a>
+                  </div>
+                  <!-- /.dt-entry-more -->
+
+                  <div class="dt-entry-category">
+                    Category: <a href="#">Digital</a>
+                  </div>
+                  <!-- /.dt-entry-category -->
+                </footer>
+                <!-- /.dt-entry-footer -->
+              </article>
+              <!-- /.dt-post -->
+            </div>
+            <!-- /.col-md-6 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.col-md-8 -->
+
+        <div class="col-md-4">
+          <div id="home-sidebar-area">
+            <section id="widget_image-carousel" class="widget sr-animated widget_dt_image_carousel">
+              <h4 class="widget-title text-uppercase">News Partner</h4>
+
+              <div class="dt-widget-container">
+                <div class="dt-swiper-image-carousel-widget" data-carousel="swiper">
+                  <div class="swiper-container dt-image-carousel" data-swiper="container" data-loop="true">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="static/widgets/carousel/01.jpg" alt="Image 01">
+                      </div>
+                      <!-- /.swiper-slide -->
+
+                      <div class="swiper-slide">
+                        <img src="static/widgets/carousel/02.jpg" alt="Image 02">
+                      </div>
+                      <!-- /.swiper-slide -->
+                    </div>
+                    <!-- /.swiper-wrapper -->
+
+                    <div id="dt-widget-carousel-nav-wgxinuy8k-left" data-swiper="prev">
+                      <i class="fa fa-angle-left"></i>
+                    </div>
+
+                    <div id="dt-widget-carousel-nav-wgxinuy8k-right" data-swiper="next">
+                      <i class="fa fa-angle-right"></i>
+                    </div>
+                  </div>
+                  <!-- /.dt-image-carousel -->
+                </div>
+                <!-- /.dt-swiper-image-carousel-widget -->
+              </div>
+              <!-- /.dt-entry-featured -->
+
+            </section>
+            <!-- /#widget_{ID} -->
+            <section id="widget_popular-reviews" class="widget sr-animated widget_dt_reviews_list">
+              <h4 class="widget-title text-uppercase">Popular Reviews</h4>
+
+              <div class="dt-widget-container">
+                <div class="dt-reviews-list">
+                  <div class="dt-item">
+                    <div class="dt-thumb">
+                      <img src="static/widgets/popular-reviews/01.jpg" alt="Reviews 01">
+                    </div>
+                    <!-- /.dt-thumb -->
+                    <div class="dt-content">
+                      <h4 class="dt-title text-uppercase">Phone 6S</h4>
+                      <div class="dt-ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <!-- /.dt-ratting -->
+                      <div class="dt-content">
+                        Plaid migas authentic paleo flexitarian asymmetrical.
+                      </div>
+                      <!-- /.dt-content -->
+                      <a href="#" class="dt-read-more">Read Review ></a>
+                    </div>
+                    <!-- /.dt-content -->
+                  </div>
+                  <!-- /.dt-item -->
+
+                  <div class="dt-item">
+                    <div class="dt-thumb">
+                      <img src="static/widgets/popular-reviews/02.jpg" alt="Reviews 02">
+                    </div>
+                    <!-- /.dt-thumb -->
+                    <div class="dt-content">
+                      <h4 class="dt-title text-uppercase">HT Smartphone</h4>
+                      <div class="dt-ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <!-- /.dt-ratting -->
+                      <div class="dt-content">
+                        Plaid migas authentic paleo flexitarian asymmetrical.
+                      </div>
+                      <!-- /.dt-content -->
+                      <a href="#" class="dt-read-more">Read Review ></a>
+                    </div>
+                    <!-- /.dt-content -->
+                  </div>
+                  <!-- /.dt-item -->
+
+                  <div class="dt-item">
+                    <div class="dt-thumb">
+                      <img src="static/widgets/popular-reviews/03.jpg" alt="Reviews 03">
+                    </div>
+                    <!-- /.dt-thumb -->
+                    <div class="dt-content">
+                      <h4 class="dt-title text-uppercase">one phone 23sdf</h4>
+                      <div class="dt-ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <!-- /.dt-ratting -->
+                      <div class="dt-content">
+                        Plaid migas authentic paleo flexitarian asymmetrical.
+                      </div>
+                      <!-- /.dt-content -->
+                      <a href="#" class="dt-read-more">Read Review ></a>
+                    </div>
+                    <!-- /.dt-content -->
+                  </div>
+                  <!-- /.dt-item -->
+                </div>
+                <!-- /.dt-reviews-list -->
+              </div>
+              <!-- /.dt-entry-featured -->
+
+            </section>
+            <!-- /#widget_{ID} -->
+            <section id="widget_latest-comments" class="widget sr-animated widget_dt_latest-comments">
+              <h4 class="widget-title text-uppercase">Latest Comments</h4>
+
+              <div class="dt-widget-container">
+                <div class="dt-latest-comments">
+                  <div class="dt-item">
+                    <div class="dt-comment-info">
+                      <div class="dt-avatar">
+                        <img src="static/widgets/latest-comments/01.jpg" alt="Comment 01">
+                      </div>
+                      <!-- /.dt-avatar -->
+
+                      <div class="dt-item-meta">
+                        <h4 class="dt-title">Thierry Lonford</h4>
+                        <div class="dt-date">Dec, 20, 2015 at 2 pm</div>
+                        <div class="dt-on-post">In <a href="#">“Weekend in Dublin”</a></div>
+                      </div>
+                      <!-- /.dt-meta -->
+                    </div>
+                    <!-- /.dt-comment-info -->
+
+                    <div class="dt-content">
+                      Fixie health goth crucifix food truck. Four dollar toast food truck echo park mustache kale chips. Intelligentsia portland authentic
+                    </div>
+                    <!-- /.dt-content -->
+
+                    <div class="dt-item-action">
+                      <ul class="dt-share">
+                        <li class="share-text">Share</li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-share"></i></a></li>
+                      </ul>
+                      <!-- /.dt-share -->
+
+                      <div class="dt-comment-love">
+                        <a href="#add-top-love" class="dt-add-to-fav"><i class="fa fa-heart"></i></a> (15)
+                      </div>
+                      <!-- /.dt-comment-love -->
+                    </div>
+                    <!-- /.dt-item-action -->
+                  </div>
+                  <!-- /.dt-item -->
+
+                  <div class="dt-item">
+                    <div class="dt-comment-info">
+                      <div class="dt-avatar">
+                        <img src="static/widgets/latest-comments/02.jpg" alt="Comment 02">
+                      </div>
+                      <!-- /.dt-avatar -->
+
+                      <div class="dt-item-meta">
+                        <h4 class="dt-title">Michael J. chicharrone</h4>
+                        <div class="dt-date">Dec, 20, 2015 at 2 pm</div>
+                        <div class="dt-on-post">In <a href="#">“Men trend”</a></div>
+                      </div>
+                      <!-- /.dt-meta -->
+                    </div>
+                    <!-- /.dt-comment-info -->
+
+                    <div class="dt-content">
+                      Literally tattooed cray street art poutine four dollar toast. Polaroid wolf poutine gentrify
+                    </div>
+                    <!-- /.dt-content -->
+
+                    <div class="dt-item-action">
+                      <ul class="dt-share">
+                        <li class="share-text">Share</li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-share"></i></a></li>
+                      </ul>
+                      <!-- /.dt-share -->
+
+                      <div class="dt-comment-love">
+                        <a href="#add-top-love" class="dt-add-to-fav"><i class="fa fa-heart"></i></a> (8)
+                      </div>
+                      <!-- /.dt-comment-love -->
+                    </div>
+                    <!-- /.dt-item-action -->
+                  </div>
+                  <!-- /.dt-item -->
+
+                </div>
+                <!-- /.dt-latest-comments -->
+              </div>
+              <!-- /.dt-widget-container -->
+
+            </section>
+            <!-- /#widget_{ID} -->
+
+            <section id="widget_projects-calendar" class="widget sr-animated widget_dt_projects_calendar">
+              <h4 class="widget-title text-uppercase">Projects Calendar</h4>
+
+              <div class="dt-widget-container">
+                <table id="dt-projects-calendar" class="dt-projects-calendar">
+                  <caption>
+                    <a href="#prev-month" class="prev-month"></a>
+                    <span>January</span>
+                    <a href="#next-month" class="next-month"></a>
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col" title="Sunday">Su</th>
+                      <th scope="col" title="Monday">Mo</th>
+                      <th scope="col" title="Tuesday">Tu</th>
+                      <th scope="col" title="Wednesday">We</th>
+                      <th scope="col" title="Thursday">Th</th>
+                      <th scope="col" title="Friday">Fr</th>
+                      <th scope="col" title="Saturday">Sa</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td class="old">28</td>
+                      <td class="old">29</td>
+                      <td class="old">30</td>
+                      <td class="old">31</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                      <td>9</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>12</td>
+                      <td>23</td>
+                      <td class="has-posts">
+                        <a href="#">
+                          <span>14</span>
+                          <span class="overlay-content">“Short Film Festival” <br> Event</span>
+                        </a>
+                      </td>
+                      <td>15</td>
+                      <td>16</td>
+                      <td>17</td>
+                    </tr>
+                    <tr>
+                      <td>18</td>
+                      <td>19</td>
+                      <td>20</td>
+                      <td>21</td>
+                      <td>22</td>
+                      <td>23</td>
+                      <td class="today">24</td>
+                    </tr>
+                    <tr>
+                      <td>25</td>
+                      <td>26</td>
+                      <td>27</td>
+                      <td>28</td>
+                      <td>29</td>
+                      <td>30</td>
+                      <td>31</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- /#dt-projects-calendar -->
+              </div>
+              <!-- /.dt-widget-container -->
+
+            </section>
+            <!-- /#widget_{ID} -->
+            <section id="widget_popular-tags" class="widget sr-animated widget_dt_popular_tags">
+              <h4 class="widget-title text-uppercase">Popular Tags</h4>
+
+              <div class="tagcloud">
+                <a href="#" class="text-uppercase">Beard</a>
+                <a href="#">Cliche</a>
+                <a href="#">Farm-To-Table</a>
+                <a href="#">Mixtape</a>
+                <a href="#">Tote</a>
+                <a href="#">Bag</a>
+                <a href="#">Ugh</a>
+                <a href="#" class="text-uppercase">Normcore</a>
+                <a href="#">Butcher</a>
+                <a href="#">Kogi</a>
+                <a href="#">Church-key</a>
+                <a href="#">Organic</a>
+                <a href="#">fingerstache</a>
+                <a href="#">Brunch bushwick</a>
+                <a href="#" class="text-uppercase">Chicharrones</a>
+                <a href="#">Taxidermy wayfarers</a>
+                <a href="#">Neutra Pork</a>
+                <a href="#">Belly</a>
+                <a href="#" class="text-uppercase">Kombucha</a>
+                <a href="#">Hammock</a>
+                <a href="#">Ugh</a>
+                <a href="#">Butcher</a>
+                <a href="#">Kogi</a>
+                <a href="#">Church-key</a>
+                <a href="#" class="text-uppercase">Organic</a>
+                <a href="#">fingerstache</a>
+                <a href="#">Brunch bushwick</a>
+                <a href="#">axidermy</a>
+                <a href="#">wayfarers</a>
+                <a href="#">Neutra Pork</a>
+                <a href="#">Belly</a>
+                <a href="#" class="text-uppercase">Kombucha</a>
+              </div>
+              <!-- /.tagcloud -->
+
+            </section>
+            <!-- /#widget_{ID} -->
+          </div>
+          <!-- /#home-sidebar-area -->
+        </div>
+        <!-- /.col-md-4 -->
+      </div>
+      <!-- /.row -->
+      <hr>
+
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /#dt-popular-articles-now-section -->
+
+  <!--===========================-->
+  <!--=        Ad Space         =-->
+  <!--===========================-->
+  <section id="dt-ad-space-section-2" class="dt-ad-space section-padding sr-animated">
+    <div class="dt-ad-placed">
+      <a href="#ad-link" class="dt-ad-item">
+        <img class="img-responsive" src="static/ad/02.jpg" alt="Ad Placed">
+      </a>
+    </div>
+    <!-- /.dt-ad-placed -->
+  </section>
+  <!-- /#dt-ad-space-section-2 -->
+
+  <!--===================================-->
+  <!--=        Top Rated Author         =-->
+  <!--===================================-->
+  <section id="top-rated-author-section" class="dt-top-rated-author section-padding" data-carousel="swiper">
+    <div class="dt-section-heading text-center sr-animated">
+      <h2 class="dt-section-title text-uppercase">Top Rated Author</h2>
+    </div>
+    <!-- /.dt-section-heading -->
+
+    <div class="container">
+      <div class="dt-author-carousel-single swiper-container sr-animated" data-swiper="container" data-initial="3" data-loop="true" data-looped="7" data-effect="fade" data-crossfade="true">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="dt-author-profile" data-margin-bottom="130px">
+              <div class="dt-profile-img">
+                <img src="static/author/04.jpg" alt="Profile Photo">
+              </div>
+              <!-- /.dt-profile-img -->
+
+              <div class="dt-profile-info">
+                <h3 class="dt-author-name text-uppercase">Sandra Mullock</h3>
+                <div class="dt-author-job-and-link">
+                  <div class="dt-name">
+                    Founder | Editor in chief | Author
+                  </div>
+                  <!-- /.dt-name -->
+
+                  <div class="dt-link">
+                    <a href="#">Publications ></a>
+                  </div>
+                  <!-- /.dt-link -->
+                </div>
+                <!-- /.dt-author-job-and-link -->
+
+                <ul class="dt-social-icons list-inline">
+                  <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" title="Soundcloud"><i class="fa fa-soundcloud"></i></a></li>
+                  <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+                <!-- /.dt-social-icons -->
+
+                <div class="dt-author-bio">
+                  Chambray raw denim readymade, knausgaard artisan venmo bicycle rights selfies food truck franzen tousled gluten-free tumblr. Affogato lumbersexual lo-fi, ennui street art flexitarian mumblecore freegan occupy narwhal.
+                </div>
+                <!-- /.dt-author-bio -->
+              </div>
+              <!-- /.dt-profile-info -->
+            </div>
+            <!-- /.dt-author-profile -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="dt-author-profile" data-margin-bottom="130px">
+              <div class="dt-profile-img">
+                <img src="static/author/02.jpg" alt="Profile Photo">
+              </div>
+              <!-- /.dt-profile-img -->
+
+              <div class="dt-profile-info">
+                <h3 class="dt-author-name text-uppercase">Sandra Mullock</h3>
+                <div class="dt-author-job-and-link">
+                  <div class="dt-name">
+                    Founder | Editor in chief | Author
+                  </div>
+                  <!-- /.dt-name -->
+
+                  <div class="dt-link">
+                    <a href="#">Publications ></a>
+                  </div>
+                  <!-- /.dt-link -->
+                </div>
+                <!-- /.dt-author-job-and-link -->
+
+                <ul class="dt-social-icons list-inline">
+                  <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" title="Soundcloud"><i class="fa fa-soundcloud"></i></a></li>
+                  <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+                <!-- /.dt-social-icons -->
+
+                <div class="dt-author-bio">
+                  Chambray raw denim readymade, knausgaard artisan venmo bicycle rights selfies food truck franzen tousled gluten-free tumblr. Affogato lumbersexual lo-fi, ennui street art flexitarian mumblecore freegan occupy narwhal.
+                </div>
+                <!-- /.dt-author-bio -->
+              </div>
+              <!-- /.dt-profile-info -->
+            </div>
+            <!-- /.dt-author-profile -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="dt-author-profile" data-margin-bottom="130px">
+              <div class="dt-profile-img">
+                <img src="static/author/03.jpg" alt="Profile Photo">
+              </div>
+              <!-- /.dt-profile-img -->
+
+              <div class="dt-profile-info">
+                <h3 class="dt-author-name text-uppercase">Sandra Mullock</h3>
+                <div class="dt-author-job-and-link">
+                  <div class="dt-name">
+                    Founder | Editor in chief | Author
+                  </div>
+                  <!-- /.dt-name -->
+
+                  <div class="dt-link">
+                    <a href="#">Publications ></a>
+                  </div>
+                  <!-- /.dt-link -->
+                </div>
+                <!-- /.dt-author-job-and-link -->
+
+                <ul class="dt-social-icons list-inline">
+                  <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" title="Soundcloud"><i class="fa fa-soundcloud"></i></a></li>
+                  <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+                <!-- /.dt-social-icons -->
+
+                <div class="dt-author-bio">
+                  Chambray raw denim readymade, knausgaard artisan venmo bicycle rights selfies food truck franzen tousled gluten-free tumblr. Affogato lumbersexual lo-fi, ennui street art flexitarian mumblecore freegan occupy narwhal.
+                </div>
+                <!-- /.dt-author-bio -->
+              </div>
+              <!-- /.dt-profile-info -->
+            </div>
+            <!-- /.dt-author-profile -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="dt-author-profile" data-margin-bottom="130px">
+              <div class="dt-profile-img">
+                <img src="static/author/01-large.jpg" alt="Profile Photo">
+              </div>
+              <!-- /.dt-profile-img -->
+
+              <div class="dt-profile-info">
+                <h3 class="dt-author-name text-uppercase">Sandra Mullock</h3>
+                <div class="dt-author-job-and-link">
+                  <div class="dt-name">
+                    Founder | Editor in chief | Author
+                  </div>
+                  <!-- /.dt-name -->
+
+                  <div class="dt-link">
+                    <a href="#">Publications ></a>
+                  </div>
+                  <!-- /.dt-link -->
+                </div>
+                <!-- /.dt-author-job-and-link -->
+
+                <ul class="dt-social-icons list-inline">
+                  <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" title="Soundcloud"><i class="fa fa-soundcloud"></i></a></li>
+                  <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+                <!-- /.dt-social-icons -->
+
+                <div class="dt-author-bio">
+                  Chambray raw denim readymade, knausgaard artisan venmo bicycle rights selfies food truck franzen tousled gluten-free tumblr. Affogato lumbersexual lo-fi, ennui street art flexitarian mumblecore freegan occupy narwhal.
+                </div>
+                <!-- /.dt-author-bio -->
+              </div>
+              <!-- /.dt-profile-info -->
+            </div>
+            <!-- /.dt-author-profile -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="dt-author-profile" data-margin-bottom="130px">
+              <div class="dt-profile-img">
+                <img src="static/author/05.jpg" alt="Profile Photo">
+              </div>
+              <!-- /.dt-profile-img -->
+
+              <div class="dt-profile-info">
+                <h3 class="dt-author-name text-uppercase">Sandra Mullock</h3>
+                <div class="dt-author-job-and-link">
+                  <div class="dt-name">
+                    Founder | Editor in chief | Author
+                  </div>
+                  <!-- /.dt-name -->
+
+                  <div class="dt-link">
+                    <a href="#">Publications ></a>
+                  </div>
+                  <!-- /.dt-link -->
+                </div>
+                <!-- /.dt-author-job-and-link -->
+
+                <ul class="dt-social-icons list-inline">
+                  <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" title="Soundcloud"><i class="fa fa-soundcloud"></i></a></li>
+                  <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+                <!-- /.dt-social-icons -->
+
+                <div class="dt-author-bio">
+                  Chambray raw denim readymade, knausgaard artisan venmo bicycle rights selfies food truck franzen tousled gluten-free tumblr. Affogato lumbersexual lo-fi, ennui street art flexitarian mumblecore freegan occupy narwhal.
+                </div>
+                <!-- /.dt-author-bio -->
+              </div>
+              <!-- /.dt-profile-info -->
+            </div>
+            <!-- /.dt-author-profile -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="dt-author-profile" data-margin-bottom="130px">
+              <div class="dt-profile-img">
+                <img src="static/author/06.jpg" alt="Profile Photo">
+              </div>
+              <!-- /.dt-profile-img -->
+
+              <div class="dt-profile-info">
+                <h3 class="dt-author-name text-uppercase">Sandra Mullock</h3>
+                <div class="dt-author-job-and-link">
+                  <div class="dt-name">
+                    Founder | Editor in chief | Author
+                  </div>
+                  <!-- /.dt-name -->
+
+                  <div class="dt-link">
+                    <a href="#">Publications ></a>
+                  </div>
+                  <!-- /.dt-link -->
+                </div>
+                <!-- /.dt-author-job-and-link -->
+
+                <ul class="dt-social-icons list-inline">
+                  <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" title="Soundcloud"><i class="fa fa-soundcloud"></i></a></li>
+                  <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+                <!-- /.dt-social-icons -->
+
+                <div class="dt-author-bio">
+                  Chambray raw denim readymade, knausgaard artisan venmo bicycle rights selfies food truck franzen tousled gluten-free tumblr. Affogato lumbersexual lo-fi, ennui street art flexitarian mumblecore freegan occupy narwhal.
+                </div>
+                <!-- /.dt-author-bio -->
+              </div>
+              <!-- /.dt-profile-info -->
+            </div>
+            <!-- /.dt-author-profile -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="dt-author-profile" data-margin-bottom="130px">
+              <div class="dt-profile-img">
+                <img src="static/author/07.jpg" alt="Profile Photo">
+              </div>
+              <!-- /.dt-profile-img -->
+
+              <div class="dt-profile-info">
+                <h3 class="dt-author-name text-uppercase">Sandra Mullock</h3>
+                <div class="dt-author-job-and-link">
+                  <div class="dt-name">
+                    Founder | Editor in chief | Author
+                  </div>
+                  <!-- /.dt-name -->
+
+                  <div class="dt-link">
+                    <a href="#">Publications ></a>
+                  </div>
+                  <!-- /.dt-link -->
+                </div>
+                <!-- /.dt-author-job-and-link -->
+
+                <ul class="dt-social-icons list-inline">
+                  <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" title="Soundcloud"><i class="fa fa-soundcloud"></i></a></li>
+                  <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+                <!-- /.dt-social-icons -->
+
+                <div class="dt-author-bio">
+                  Chambray raw denim readymade, knausgaard artisan venmo bicycle rights selfies food truck franzen tousled gluten-free tumblr. Affogato lumbersexual lo-fi, ennui street art flexitarian mumblecore freegan occupy narwhal.
+                </div>
+                <!-- /.dt-author-bio -->
+              </div>
+              <!-- /.dt-profile-info -->
+            </div>
+            <!-- /.dt-author-profile -->
+          </div>
+          <!-- /.swiper-slide -->
+
+        </div>
+        <!-- /.swiper-wrapper -->
+      </div>
+      <!-- /.dt-author-carousel-single -->
+    </div>
+    <!-- /.container -->
+
+    <div class="dt-item-carousel dt-style-03 sr-animated">
+      <div id="dt-item-carousel-9d3rrq" class="swiper-container" data-swiper="ascontrol" data-initial="3" data-items="6" data-center="true" data-space="38" data-click-to-slide="true" data-loop="true" data-looped="7" data-breakpoints='{"5000": {"slidesPerView": 6}, "1024": {"slidesPerView": 4}, "768": {"slidesPerView": 2}}'>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="dt-item">
+              <img src="static/author/04.jpg" alt="Image 01">
+            </div>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="dt-item">
+              <img src="static/author/02.jpg" alt="Image 02">
+            </div>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="dt-item">
+              <img src="static/author/03.jpg" alt="Image 03">
+            </div>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="dt-item">
+              <img src="static/author/01.jpg" alt="Image 04">
+            </div>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="dt-item">
+              <img src="static/author/05.jpg" alt="Image 05">
+            </div>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="dt-item">
+              <img src="static/author/06.jpg" alt="Image 06">
+            </div>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="dt-item">
+              <img src="static/author/07.jpg" alt="Image 07">
+            </div>
+            <!-- /.dt-item -->
+          </div>
+          <!-- /.swiper-slide -->
+        </div>
+        <!-- /.swiper-wrapper -->
+      </div>
+      <!-- /#dt-item-carousel-9d3rrq -->
+
+      <div id="dt-item-carousel-nav-9d3rrq-left" data-swiper="prev">
+        <i class="fa fa-angle-left"></i>
+      </div>
+      <div id="dt-item-carousel-nav-9d3rrq-right" data-swiper="next">
+        <i class="fa fa-angle-right"></i>
+      </div>
+
+      <a href="#" class="pull-right dt-become-author">Want to become an author?</a>
+    </div>
+    <!-- /.dt-item-carousel -->
+
+  </section>
+  <!-- /#top-rated-author-section -->
+
+  <!--=========================-->
+  <!--=        Footer         =-->
+  <!--=========================-->
+
+  <div class="section-padding"></div>
+
+  <footer id="dt-site-footer" class="dt-site-footer sr-animated">
+    <div class="container">
+      <div class="row dt-widget-area">
+        <div class="col-md-6">
+          <section id="widget_about-us" class="widget sr-animated widget_dt_about_us">
+
+            <div class="dt-widget-container">
+              <div class="dt-company-logo">
+                <img src="static/widgets/about-us/logo.png" alt="Ambio">
+              </div>
+              <!-- /.dt-company-logo -->
+
+              <div class="dt-about-us-content">
+                Ambio 2015 trust fund pinterest chillwave tote bag you probably haven't heard of them, wayfarers brunch tacos squid. Bushwick cold-pressed chia plaid, small batch yuccie ramps fashion axe bicycle rights next level actually authentic ugh artisan ethical.
+                Direct trade slow-carb salvia readymade.
+              </div>
+              <!-- /.dt-about-us-content -->
+            </div>
+            <!-- /.dt-entry-featured -->
+            <div class="clearfix"></div>
+
+          </section>
+          <!-- /#widget_{ID} -->
+        </div>
+        <!-- /.col-md-6 -->
+
+        <div class="col-md-2 col-md-offset-1">
+          <section id="widget_links-1" class="widget sr-animated widget_dt_links">
+
+            <div class="dt-widget-container">
+              <ul class="dt-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+              <!-- /.dt-links -->
+            </div>
+            <!-- /.dt-entry-featured -->
+
+          </section>
+          <!-- /#widget_{ID} -->
+        </div>
+        <!-- /.col-md-2 -->
+
+        <div class="col-md-2 last-widget">
+          <section id="widget_links-2" class="widget sr-animated widget_dt_links">
+
+            <div class="dt-widget-container">
+              <ul class="dt-links">
+                <li><a href="#">Vacancy</a></li>
+                <li><a href="#">For Advertisers</a></li>
+                <li><a href="#">Help</a></li>
+              </ul>
+              <!-- /.dt-links -->
+            </div>
+            <!-- /.dt-entry-featured -->
+
+          </section>
+          <!-- /#widget_{ID} -->
+        </div>
+        <!-- /.col-md-2 -->
+      </div>
+      <!-- /.row -->
+
+      <div class="dt-copyrigts-info sr-animated">
+        <div class="dt-copyrights pull-left">
+          <p class="pull-left"> 2020 Copyright <i class="fa fa-heart" aria-hidden="true"></i> by <a href="#">Papon Chandra</a></p>        </div>
+        <!-- /.dt-copyrights -->
+
+        <ul class="dt-social-icons list-inline pull-right">
+          <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#" title="Soundcloud"><i class="fa fa-soundcloud"></i></a></li>
+          <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+        <!-- /.dt-social-icons -->
+      </div>
+      <!-- /.dt-copyrigts-info -->
+    </div>
+    <!-- /.container -->
+
+    <a href="#back-to-top-position" class="dt-back-to-top text-center" data-type="section-switch">
+      Back To Top
+    </a>
+    <!-- /.dt-back-to-top -->
+
+  </footer>
+  <!-- /#dt-site-footer -->
+
+
+  <!--=====  Dependency Scripts  ======-->
+  <script src="dependencies/jquery/jquery.min.js"></script>
+  <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+  <script src="dependencies/isotope/isotope.pkgd.min.js"></script>
+  <script src="dependencies/scrollreveal/scrollreveal.min.js"></script>
+  <script src="dependencies/smoothscroll/SmoothScroll.js"></script>
+  <script src="dependencies/Swiper/js/swiper.min.js"></script>
+  <script src="https://maps.google.com/maps/api/js"></script>
+  <script src="dependencies/gmap3/gmap3.min.js"></script>
+  <script src="dependencies/jquery.countdown/jquery.countdown.min.js"></script>
+  <!-- <script src="dependencies/mediaelement/mediaelement-and-player.min.js"></script> -->
+
+  <!--=====  App Scripts  ======-->
+  <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

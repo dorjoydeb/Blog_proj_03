@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--=====  Meta Data  ======-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Error Page - Ambio</title>
+
+  <!--=====  Application Icons  ======-->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="assets/img/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/img/icons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="assets/img/icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="assets/img/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="assets/img/icons/manifest.json">
+  <link rel="mask-icon" href="assets/img/icons/safari-pinned-tab.svg">
+  <link rel="shortcut icon" href="assets/img/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="assets/img/icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="assets/img/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!--=====  Dependency Styles  ======-->
+  <link rel="stylesheet" href="dependencies/loaders.css/loaders.min.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/font-awesome/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/Swiper/css/swiper.min.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/animate.css/animate.min.css" type="text/css">
+
+  <!--=====  App Styles  ======-->
+  <link rel="stylesheet" href="assets/css/app.css" type="text/css">
+
+  <!--=====  Google Web Fonts  ======-->
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  <style>
+    /* Preloader */
+
+    #preloader {
+      /*display: none;*/
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #0f161e;
+      z-index: 9999;
+    }
+
+    #loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  </style>
+
+</head>
+
+<body id="error-page" class="error-page no-padding">
+  <div id="preloader">
+    <div id="loader">
+      <div class="loader-inner ball-scale-multiple">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- /#loader -->
+  </div>
+  <!-- /#preloader -->
+  <div id="back-to-top-position"></div>
+
+
+  <!--=============================-->
+  <!--=        Error Page         =-->
+  <!--=============================-->
+  <section id="dt-error-page-sections" class="dt-error-page-section">
+    <div class="dt-error-container">
+      <img src="static/error-page/background.jpg" alt="Error Page">
+      <div class="dt-error-overlay">
+        <div class="content">
+          <img src="static/error-page/small.jpg" alt="Error Page">
+          <div class="info">
+            <h1 class="title">Error</h1>
+            <p class="subtitle">
+              Page Not Found
+            </p>
+
+            <div class="dt-back">
+              Back to <br>
+              <a href="#">Home</a>
+            </div>
+            <!-- /.dt-back -->
+          </div>
+          <!-- /.info -->
+        </div>
+        <!-- /.content -->
+      </div>
+      <!-- /.dt-error-overlay -->
+
+      <div class="dt-error-social">
+        <h4 class="title">Ambio In Social Media</h4>
+        <ul class="dt-social-icons vertical text-center">
+          <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#" title="Soundcloud"><i class="fa fa-soundcloud"></i></a></li>
+          <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+        <!-- /.dt-social-icons -->
+      </div>
+      <!-- /.error-social -->
+    </div>
+    <!-- /.dt-error-container -->
+  </section>
+  <!-- /#dt-error-page-sections -->
+
+
+  <!--=====  Dependency Scripts  ======-->
+  <script src="dependencies/jquery/jquery.min.js"></script>
+  <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+  <script src="dependencies/isotope/isotope.pkgd.min.js"></script>
+  <script src="dependencies/scrollreveal/scrollreveal.min.js"></script>
+  <script src="dependencies/smoothscroll/SmoothScroll.js"></script>
+  <script src="dependencies/Swiper/js/swiper.min.js"></script>
+  <script src="https://maps.google.com/maps/api/js"></script>
+  <script src="dependencies/gmap3/gmap3.min.js"></script>
+  <script src="dependencies/jquery.countdown/jquery.countdown.min.js"></script>
+  <!-- <script src="dependencies/mediaelement/mediaelement-and-player.min.js"></script> -->
+
+  <!--=====  App Scripts  ======-->
+  <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
